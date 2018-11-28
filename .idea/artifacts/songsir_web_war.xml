@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="songsir-web:war">
+    <output-path>$PROJECT_DIR$/songsir-web/target</output-path>
+    <root id="archive" name="songsir-web-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="songsir-web:war exploded" />
+    </root>
+  </artifact>
+</component>
