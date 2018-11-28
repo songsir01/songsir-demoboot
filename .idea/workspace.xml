@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8d5bb875-416d-4f46-9bf8-ae006c4d3394" name="Default" comment="" />
+    <list default="true" id="8d5bb875-416d-4f46-9bf8-ae006c4d3394" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/songsir-commont/target/" />
@@ -147,6 +150,9 @@
     <replaceStrings>
       <replace>com</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -331,6 +337,7 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -354,85 +361,6 @@
             <path>
               <item name="songsir-demoboot" type="b2602c69:ProjectViewProjectNode" />
               <item name="songsir-demoboot" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="songsir-demoboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="songsir-demoboot" type="462c0819:PsiDirectoryNode" />
-              <item name="songsir-bean" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="songsir-demoboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="songsir-demoboot" type="462c0819:PsiDirectoryNode" />
-              <item name="songsir-bean" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="songsir-demoboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="songsir-demoboot" type="462c0819:PsiDirectoryNode" />
-              <item name="songsir-bean" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="songsir-demoboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="songsir-demoboot" type="462c0819:PsiDirectoryNode" />
-              <item name="songsir-bean" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="songsir-demoboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="songsir-demoboot" type="462c0819:PsiDirectoryNode" />
-              <item name="songsir-commont" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="songsir-demoboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="songsir-demoboot" type="462c0819:PsiDirectoryNode" />
-              <item name="songsir-dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="songsir-demoboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="songsir-demoboot" type="462c0819:PsiDirectoryNode" />
-              <item name="songsir-web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="songsir-demoboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="songsir-demoboot" type="462c0819:PsiDirectoryNode" />
-              <item name="songsir-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="songsir-demoboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="songsir-demoboot" type="462c0819:PsiDirectoryNode" />
-              <item name="songsir-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="songsir-demoboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="songsir-demoboot" type="462c0819:PsiDirectoryNode" />
-              <item name="songsir-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="songsir-demoboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="songsir-demoboot" type="462c0819:PsiDirectoryNode" />
-              <item name="songsir-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="songsir" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="songsir-demoboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="songsir-demoboot" type="462c0819:PsiDirectoryNode" />
-              <item name="songsir-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -589,12 +517,12 @@
       <option name="presentableId" value="Default" />
       <updated>1543389443474</updated>
       <workItem from="1543389448659" duration="3119000" />
-      <workItem from="1543393424787" duration="3861000" />
+      <workItem from="1543393424787" duration="4383000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6980000" />
+    <option name="totallyTimeSpent" value="7502000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -615,11 +543,11 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291815" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32562277" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3291815" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2541857" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3291815" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2541857" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
