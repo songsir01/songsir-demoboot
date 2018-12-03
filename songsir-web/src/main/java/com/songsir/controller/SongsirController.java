@@ -26,4 +26,9 @@ public class SongsirController {
         System.out.println(student.toString());
         return "Hello World!";
     }
+
+    @RequestMapping("/songsirTest")
+    public String songsirTest() {
+        return "songsirTest";
+    }
 }
