@@ -1,59 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8d5bb875-416d-4f46-9bf8-ae006c4d3394" name="Default" comment="test songsir">
-      <change beforePath="" afterPath="$PROJECT_DIR$/mysqlDB/teacher.sql" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/songsir-bean/src/java/com/songsir/bean/Teacher.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/songsir-dao/src/java/com/songsir/dao/mapper2/SongsirTeacherMapper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/songsir-dao/src/java/com/songsir/dao/mapper2/SongsirTeacherMapper.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/songsir-web/src/main/java/com/songsir/config/StuDataSourceConfig.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/songsir-web/src/main/java/com/songsir/config/TeaDataSourceConfig.java" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/songsir_web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/songsir_web_war_exploded.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_3.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_9.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_9.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_43.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_16.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_16.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_16.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jdbc_8_5_16.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_juli_8_5_16.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_3_5_Final.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_1_Final.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_5_6_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_5_6_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_5_6_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_1_5_6_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_5_6_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_5_6_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_5_6_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_10_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_10_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_10_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_10_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_10_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_10_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_10_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_10_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_10_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/mysqlDB/student.sql" afterPath="$PROJECT_DIR$/mysqlDB/student.sql" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/songsir-bean/songsir-bean.iml" afterPath="$PROJECT_DIR$/songsir-bean/songsir-bean.iml" />
-      <change beforePath="$PROJECT_DIR$/songsir-commont/pom.xml" afterPath="$PROJECT_DIR$/songsir-commont/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/songsir-commont/songsir-commont.iml" afterPath="$PROJECT_DIR$/songsir-commont/songsir-commont.iml" />
-      <change beforePath="$PROJECT_DIR$/songsir-dao/songsir-dao.iml" afterPath="$PROJECT_DIR$/songsir-dao/songsir-dao.iml" />
-      <change beforePath="$PROJECT_DIR$/songsir-dao/src/java/com/songsir/dao/mapper/SongsirMapper.java" afterPath="$PROJECT_DIR$/songsir-dao/src/java/com/songsir/dao/mapper/SongsirMapper.java" />
-      <change beforePath="$PROJECT_DIR$/songsir-dao/src/java/com/songsir/dao/mapper/SongsirMapper.xml" afterPath="$PROJECT_DIR$/songsir-dao/src/java/com/songsir/dao/mapper/SongsirMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/songsir-service/songsir-service.iml" afterPath="$PROJECT_DIR$/songsir-service/songsir-service.iml" />
-      <change beforePath="$PROJECT_DIR$/songsir-service/src/java/com/songsir/service/ISongsirService.java" afterPath="$PROJECT_DIR$/songsir-service/src/java/com/songsir/service/ISongsirService.java" />
-      <change beforePath="$PROJECT_DIR$/songsir-service/src/java/com/songsir/service/impl/SongsirServiceImpl.java" afterPath="$PROJECT_DIR$/songsir-service/src/java/com/songsir/service/impl/SongsirServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/songsir-web/songsir-web.iml" afterPath="$PROJECT_DIR$/songsir-web/songsir-web.iml" />
-      <change beforePath="$PROJECT_DIR$/songsir-web/src/main/java/com/songsir/SongsirApplication.java" afterPath="$PROJECT_DIR$/songsir-web/src/main/java/com/songsir/SongsirApplication.java" />
-      <change beforePath="$PROJECT_DIR$/songsir-web/src/main/java/com/songsir/controller/SongsirController.java" afterPath="$PROJECT_DIR$/songsir-web/src/main/java/com/songsir/controller/SongsirController.java" />
-      <change beforePath="$PROJECT_DIR$/songsir-web/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/songsir-web/src/main/resources/application.properties" />
-    </list>
+    <list default="true" id="8d5bb875-416d-4f46-9bf8-ae006c4d3394" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/songsir-commont/target/" />
@@ -105,7 +53,7 @@
       <file leaf-file-name="student.sql" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysqlDB/student.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-204">
+            <state relative-caret-position="20">
               <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
               <folding>
                 <marker date="1544164198631" expanded="true" signature="0:288" ph="/* Navicat M... " />
@@ -816,7 +764,7 @@
       <workItem from="1543393424787" duration="5549000" />
       <workItem from="1543457103269" duration="7339000" />
       <workItem from="1543810882376" duration="324000" />
-      <workItem from="1544152053556" duration="11471000" />
+      <workItem from="1544152053556" duration="11603000" />
     </task>
     <task id="LOCAL-00001" summary="test songsir">
       <created>1543811134268</created>
@@ -839,11 +787,18 @@
       <option name="project" value="LOCAL" />
       <updated>1543824916848</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="多数据源配置">
+      <created>1544164328821</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1544164328821</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31289000" />
+    <option name="totallyTimeSpent" value="31421000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -857,7 +812,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34582132" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34582132" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -867,7 +822,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291815" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36743516" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32853025" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32853025" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2629683" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952815" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -899,7 +854,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test songsir" />
-    <option name="LAST_COMMIT_MESSAGE" value="test songsir" />
+    <MESSAGE value="多数据源配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="多数据源配置" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1349,7 +1305,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysqlDB/student.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204">
+        <state relative-caret-position="20">
           <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
           <folding>
             <marker date="1544164198631" expanded="true" signature="0:288" ph="/* Navicat M... " />
