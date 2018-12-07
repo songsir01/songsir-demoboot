@@ -197,3 +197,11 @@ songsir-dao/.gitignore
 songsir-service/.gitignore
 songsir-web/.gitignore
 .gitignore
+songsir-bean/target/generated-sources/
+songsir-dao/target/classes/com/songsir/dao/mapper/SongsirMapper.xml
+songsir-dao/target/classes/com/songsir/dao/mapper2/SongsirTeacherMapper.xml
+songsir-dao/target/generated-sources/
+songsir-service/target/generated-sources/
+songsir-web/target/classes/application.properties
+songsir-web/target/generated-sources/
+songsir-web/target/maven-status/
