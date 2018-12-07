@@ -13,7 +13,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Copyright Copyright (c) 2018, songyapeng@shopin.cn All Rights Reserved.
  */
 @SpringBootApplication
-@MapperScan("com.songsir.dao.*")
+@MapperScan("com.songsir.dao")
 public class SongsirApplication {
 
     public static void main(String[] args) {

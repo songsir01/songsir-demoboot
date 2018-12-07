@@ -1,6 +1,5 @@
-package com.songsir.dao.mapper;
+package com.songsir.dao.mapper2;
 
-import com.songsir.bean.Student;
 import com.songsir.bean.Teacher;
 
 /**
@@ -11,8 +10,8 @@ import com.songsir.bean.Teacher;
  * @Description:
  * @Copyright Copyright (c) 2018, songyapeng@shopin.cn All Rights Reserved.
  */
-public interface SongsirMapper {
+public interface SongsirTeacherMapper {
 
-    Student getDemoStudent(int sid);
+    Teacher getTeacher(int sid);
 
 }

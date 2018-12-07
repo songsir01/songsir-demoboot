@@ -1,7 +1,9 @@
 package com.songsir.service.impl;
 
 import com.songsir.bean.Student;
+import com.songsir.bean.Teacher;
 import com.songsir.dao.mapper.SongsirMapper;
+import com.songsir.dao.mapper2.SongsirTeacherMapper;
 import com.songsir.service.ISongsirService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,9 +21,17 @@ public class SongsirServiceImpl implements ISongsirService {
 
     @Autowired
     SongsirMapper songsirMapper;
+    @Autowired
+    SongsirTeacherMapper songsirTeacherMapper;
 
     @Override
-    public Student getDemoDb(String SID) {
-        return songsirMapper.getDemoDb(SID);
+    public Student getDemoStudent(int sid) {
+        return songsirMapper.getDemoStudent(sid);
     }
+
+    @Override
+    public Teacher getDemoTeacher(int sid) {
+        return songsirTeacherMapper.getTeacher(sid);
+    }
+
 }

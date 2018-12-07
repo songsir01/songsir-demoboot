@@ -196,3 +196,4 @@ songsir-commont/.gitignore
 songsir-dao/.gitignore
 songsir-service/.gitignore
 songsir-web/.gitignore
+.gitignore

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.songsir.dao.mapper.SongsirMapper">
+<mapper namespace="com.songsir.dao.mapper2.SongsirTeacherMapper">
 
-    <select id="getDemoStudent" parameterType="int" resultType="com.songsir.bean.Student">
-        select * from student
+    <select id="getTeacher" parameterType="int" resultType="com.songsir.bean.Teacher">
+        select * from teacher
         where sid = #{sid}
     </select>
 </mapper>

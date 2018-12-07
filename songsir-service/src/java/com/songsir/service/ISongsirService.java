@@ -1,6 +1,7 @@
 package com.songsir.service;
 
 import com.songsir.bean.Student;
+import com.songsir.bean.Teacher;
 
 /**
  * @PackageName com.songsir.service
@@ -12,5 +13,8 @@ import com.songsir.bean.Student;
  */
 public interface ISongsirService {
 
-    Student getDemoDb(String SID);
+    Student getDemoStudent(int sid);
+
+    Teacher getDemoTeacher(int sid);
+
 }

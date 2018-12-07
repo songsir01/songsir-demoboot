@@ -1,6 +1,7 @@
 package com.songsir.controller;
 
 import com.songsir.bean.Student;
+import com.songsir.bean.Teacher;
 import com.songsir.service.ISongsirService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,15 +21,19 @@ public class SongsirController {
     @Autowired
     ISongsirService songsirService;
 
-    @RequestMapping("/firstDemo")
-    public String firstDemo(String SID) {
-        Student student = songsirService.getDemoDb(SID);
+    @RequestMapping("/studentDemo")
+    public String firstDemo(int sid) {
+        Student student = songsirService.getDemoStudent(sid);
         System.out.println(student.toString());
-        return "Hello World!";
+        return student.toString();
     }
 
-    @RequestMapping("/songsirTest")
-    public String songsirTest() {
-        return "songsirTest";
+    @RequestMapping("/teacherDemo")
+    public String teacherDemo(int sid) {
+        Teacher teacher = songsirService.getDemoTeacher(sid);
+        System.out.println(teacher.toString());
+        return teacher.toString();
     }
+
+
 }
