@@ -1,17 +1,18 @@
-package net.shopin.wap.config;
+package com.songsir.config;
 
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
 /**
- * 配置jsp路径
- * Created by pengweiqiang on 2017/11/4.
+ * @PackageName com.songsir.config
+ * @ProjectName songsir-demoboot
+ * @Auther: SongYapeng
+ * @Date: Create in 9:34 2019/1/15
+ * @Description:
+ * @Copyright Copyright (c) 2018, songyapeng@shopin.cn All Rights Reserved.
  */
-@Configuration
-public class MvcConfig extends WebMvcConfigurerAdapter {
+public class PageMVCConfig {
 
     @Bean
     public InternalResourceViewResolver setupViewResolver() {

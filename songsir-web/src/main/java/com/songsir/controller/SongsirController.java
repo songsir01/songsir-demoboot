@@ -4,8 +4,8 @@ import com.songsir.bean.Student;
 import com.songsir.bean.Teacher;
 import com.songsir.service.ISongsirService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @PackageName com.songsir.controller
@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Description:
  * @Copyright Copyright (c) 2018, songyapeng@shopin.cn All Rights Reserved.
  */
-@RestController
+@Controller
 public class SongsirController {
 
     @Autowired
@@ -34,6 +34,10 @@ public class SongsirController {
         System.out.println(teacher.toString());
         return teacher.toString();
     }
+
+
+
+
 
 
 }
