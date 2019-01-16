@@ -31,7 +31,6 @@
                     dataType: 'text/html',
                     success: function(data,success){
                         $("#showImg").append('<img src="https://songsiraliyun.oss-cn-beijing.aliyuncs.com/images/'+data+'">');
-                        alert(data);
                     },
                     error: function (data, status, e){
                         aler("上传图片失败，请稍后重试。");
