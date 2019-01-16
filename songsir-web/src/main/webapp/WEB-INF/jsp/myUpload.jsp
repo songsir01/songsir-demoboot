@@ -14,7 +14,10 @@
 </head>
 <body>
 <input type="file" capture="camera" accept="images/*"  id="upload" name="file">
+<br>
+<div id = "showImg">
 
+</div>
 <script>
     $("#upload").live("change",upload);
     function upload(event){
@@ -27,6 +30,7 @@
                     fileElementId:'upload',
                     dataType: 'text/html',
                     success: function(data,success){
+                        $("#showImg").append('<img src="https://songsiraliyun.oss-cn-beijing.aliyuncs.com/images/'+data+'">');
                         alert(data);
                     },
                     error: function (data, status, e){
