@@ -48,6 +48,8 @@
                                 $("#gender").val(json.gender);
                                 $("#age").val(json.age);
                                 $("#beauty").val(json.beauty);
+                            } else {
+                                alert("抱歉，图片没有检测到人脸");
                             }
                         }
 
