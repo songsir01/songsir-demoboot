@@ -1,17 +1,10 @@
 package com.songsir;
 
 import com.alibaba.fastjson.JSON;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import com.songsir.bean.TBean;
-import com.songsir.bean.TestBean;
-import net.sf.json.JSONObject;
 import org.junit.Test;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Random;
 
 /**
  * @PackageName com.songsir

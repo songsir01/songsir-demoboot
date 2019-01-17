@@ -8,15 +8,25 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>颜值评分</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
     <script src="../../js/jquery-1.7.2.min.js"></script>
     <script src="../../js/ajaxfileupload.js"></script>
+    <style>
+        .imgSize{ width:100%; height:90%;}
+    </style>
 </head>
 <body>
-<input type="file" capture="camera" accept="images/*"  id="upload" name="file">
+<input type="file"  accept="images/*"  id="upload" name="file">
 <br>
-<div id = "showImg">
+<div id = "showImg" class="imgSize">
 
+</div>
+<div id = "faceShow">
+    您的性别：<input id = "gender"><br>
+    您的年龄：<input id = "age"><br>
+    您的颜值：<input id = "beauty"><br>
 </div>
 <script>
     $("#upload").live("change",upload);
@@ -30,11 +40,19 @@
                     fileElementId:'upload',
                     dataType: 'text/html',
                     success: function(data,success){
-                        $("#showImg").append('<img src="https://songsiraliyun.oss-cn-beijing.aliyuncs.com/images/'+data+'">');
+                        var json=JSON.parse(data);
+                        if (json.success) {
+                            $("#showImg").append('<img class="imgSize" src="https://songsiraliyun.oss-cn-beijing.aliyuncs.com/images/'+json.msg+'">');
+                            if (json.successFace) {
+                                $("#gender").val(json.gender);
+                                $("#age").val(json.age);
+                                $("#beauty").val(json.beauty);
+                            }
+                        }
+
                     },
                     error: function (data, status, e){
-                        aler("上传图片失败，请稍后重试。");
-                        closeLoad();
+                        alert("上传图片失败，请稍后重试。");
                     }
                 });
             }

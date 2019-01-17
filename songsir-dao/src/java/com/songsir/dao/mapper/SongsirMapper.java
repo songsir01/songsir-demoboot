@@ -1,7 +1,6 @@
 package com.songsir.dao.mapper;
 
 import com.songsir.bean.Student;
-import com.songsir.bean.Teacher;
 
 /**
  * @PackageName PACKAGE_NAME
