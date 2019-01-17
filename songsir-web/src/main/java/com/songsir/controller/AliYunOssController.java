@@ -124,22 +124,23 @@ public class AliYunOssController {
      */
     public JSONObject faceReact(InputStream input, JSONObject ret) {
         try {
+            // 以下代码将文件流转为base64
             ByteArrayOutputStream outStream = new ByteArrayOutputStream();
             byte[] buffer = new byte[1024];
             int len = 0;
             while ((len = input.read(buffer)) != -1) {
                 outStream.write(buffer, 0, len);
             }
-            // 转化成byte[] 网络上都是 byte [] data = new byte[inputStream.available()];这种方法不可取
             byte[] data = outStream.toByteArray();
-
             String imageEncode = Base64Util.encode(data);
             Map<String, Object> map = new HashMap<>();
+            // 图片的base64值
             map.put("image", imageEncode);
+            // 测试类型，此处只检测人脸 年龄、颜值评分和性别
             map.put("face_field", "age,beauty,gender");
             map.put("image_type", "BASE64");
-
             String param = GsonUtils.toJson(map);
+            // 获取token
             String accessToken = BaiduFaceUtil.getAuth();
 
             String result = HttpUtil.post(DERECTURL, accessToken, "application/json", param);
@@ -154,7 +155,6 @@ public class AliYunOssController {
                 ret.put("age", age);
                 ret.put("beauty", beauty);
                 ret.put("gender", gender);
-
                 ret.put("successFace", true);
             }
         } catch (Exception e) {

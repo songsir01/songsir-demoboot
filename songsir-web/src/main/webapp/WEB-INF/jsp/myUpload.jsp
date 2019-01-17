@@ -31,6 +31,7 @@
 <script>
     $("#upload").live("change",upload);
     function upload(event){
+        alert("图片上传较慢，请等待十秒左右");
         if(event.target.files.length == 1 ) {
             if (event.target.files[0].size >= 4096000) {
                 alert('您这张图片过大，应小于4M');
