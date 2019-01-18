@@ -43,7 +43,7 @@
                     success: function(data,success){
                         var json=JSON.parse(data);
                         if (json.success) {
-                            $("#showImg").append('<img class="imgSize" src="https://songsiraliyun.oss-cn-beijing.aliyuncs.com/images/'+json.msg+'">');
+                            $("#showImg").append('<img class="imgSize" src="https://songsirimg.oss-cn-beijing.aliyuncs.com/home/img/'+json.msg+'">');
                             if (json.successFace) {
                                 $("#gender").val(json.gender);
                                 $("#age").val(json.age);

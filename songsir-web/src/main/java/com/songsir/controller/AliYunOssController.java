@@ -34,8 +34,8 @@ public class AliYunOssController {
     public static String ENDPOINT = "http://oss-cn-beijing.aliyuncs.com";
     public static String ACCESSKEYID = "LTAI9rV1x0TmtGjq";
     public static String ACCESSKEYSECRET = "3QCJw4MhlyZC8zQUATKaLxWZpk4bFY";
-    public static String BUCKETNAME = "songsiraliyun";
-    public static String KEY = "images/";
+    public static String BUCKETNAME = "songsirimg";
+    public static String KEY = "home/img/";
 
     private static final String DERECTURL = "https://aip.baidubce.com/rest/2.0/face/v3/detect";
 
