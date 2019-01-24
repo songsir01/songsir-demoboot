@@ -1,5 +1,6 @@
 package com.songsir.service.impl;
 
+import com.songsir.bean.Face;
 import com.songsir.bean.Student;
 import com.songsir.bean.Teacher;
 import com.songsir.dao.mapper.SongsirMapper;
@@ -32,6 +33,11 @@ public class SongsirServiceImpl implements ISongsirService {
     @Override
     public Teacher getDemoTeacher(int sid) {
         return songsirTeacherMapper.getTeacher(sid);
+    }
+
+    @Override
+    public void savaFaceInfo(Face face) {
+        songsirMapper.savaFaceInfo(face);
     }
 
 }

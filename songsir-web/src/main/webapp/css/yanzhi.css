@@ -1,0 +1,132 @@
+* { -webkit-tap-highlight-color: rgba(255, 255, 255, 0); -webkit-box-sizing: border-box; box-sizing: border-box;}
+html,body,div,p,ul,li,h1,h2,h3 { margin: 0; padding: 0;}
+html { font-size: 37.5px;}
+body { width: 100%; max-width: 750px; margin-left: auto; margin-right: auto;font-family:'microsoft yahei', PingFang-Medium,PingFangSC-Regular,Helvetica; font-size: 14px; color: #333; -webkit-user-select: none; user-select: none;}
+ul,li,i { list-style: none; font-style: normal;}
+img { vertical-align: middle;}
+a { outline: 0 none; text-decoration: none; color: #fff;}
+html,body,.page { width: 100%; height: 100%;}
+
+.btn { display: inline-block; line-height: 14px; padding: .28rem .38rem; margin-left: auto; margin-right: auto; text-align: center; font-size: .4rem; border-radius: 3px;}
+/*初始界面*/
+.initpage { width: 100%; height: 100%; background-image: url('../../images/newyanzhi/bg_1.jpg'); background-position: 0 0; background-repeat: no-repeat; background-size: cover;}
+.pageLoading {
+	position: absolute;
+	left: 0;
+	bottom: 10%;
+	width: 100%;
+	height: 54px;
+	background-image: url('../../images/newyanzhi/loading1.gif');
+	background-size: 300px 54px;
+	background-position: center 0;
+	background-repeat: no-repeat;
+}
+.ercode img {
+	width: 100%;
+}
+
+/*活动开始界面*/
+.pageTop {
+	height: 60px;
+	text-align: right;
+	background:#ea5514 url('../../images/newyanzhi/logo.png') 20px center no-repeat;
+	-webkit-background-size: 91px 34px;
+	background-size: 91px 34px;
+}
+.btnRule {
+	display: inline-block;
+	padding: 5px 10px;
+	margin: 12px 12px 0 0;
+	font-size: 15px;
+	border: solid 2px #fff;
+	border-radius: 12px;
+}
+.actRule {
+	font-size: 0;
+	padding-bottom: 8px;
+	margin-bottom: 8px;
+	border-bottom: solid 1px #fff;
+}
+.actRule span {
+	display: inline-block;
+	width: 50%;
+	font-size: .5rem;
+}
+
+/*照片*/
+.photo { margin: 20px 0; }
+.update-img {display: inline-block; position: relative; width: 100%; height: 0; padding: 50% 0;overflow: hidden;}
+#showImg {width: 100%; position: absolute; top: 0; left: 0; z-index: 1;}
+#updateImg { position: absolute; top: 0; left: 0; z-index: 2; width: 100%; height: 100%; border: 0; opacity: 0;}
+
+/*性别选择*/
+.sex { display: block; height: 30px; font-size: 20px; line-height: 30px; color: #000;}
+.sex label { float: left; width: 50%; margin:0 auto; text-align: center}
+.sex label input { margin-right: 3px; }
+
+/*按钮组*/
+.btnGroup { width: 80%; margin: 0px auto; font-size: 0;}
+.btn_default { background: #f04e23; border: solid 1px #c62c03;}
+.btn_primary { background: #19ab59; border: solid 1px #0a9748;}
+.btn_hidden { display: none;}
+.btn_disabled { background: #999; border-color: #999; color: #666}
+.btn_big { display: block; line-height: 1.6; font-size: 20px; text-align:center; text-align-last:center;}
+.m-ft { text-align: center; }
+
+/*弹层LOADING状态*/
+.eighteen img { width: 100%;}
+.eighteen img + img { margin-top: 1rem; }
+
+/*结果页面*/
+.scorePage { min-height: 100%; overflow: hidden; background-color: #ea5514; }
+.pageContent { position: relative; width: 90%; padding: 20px; margin: 20px auto 0; border-radius: 20px; background-color: #fff;}
+.pageContent h2 { font-size: 1.2rem; color: #e83828;}
+.pageContent .score { position: absolute; top: 20px; right: 10px; width: 92px; height: 92px; line-height: 92px; text-align: center; font-size: 1.2rem; background: url("../../images/newyanzhi/score.png") 0 0 no-repeat; -webkit-background-size: cover; background-size: cover; color: #fff;}
+.photo img { width: 100%; }
+.ercode { float: right;  width: 88px; margin-left: 20px;}
+.result { min-height: 110px; }
+.evaluate { font-size: .42rem; line-height: 1.6;}
+.evaluate p:nth-child(1) { margin-bottom: 10px; }
+.evaluate p > i { color: #ea5514; }
+.footer { margin-top: 20px; text-align: center; }
+.footer p { color: #fff; }
+.btn_ticket { background: #f2dc3c; color: #d8431c;}
+
+/*分享*/
+.share { display: none; }
+.shareLayer { position: fixed; left: 0; top: 0; right: 0; bottom: 0; z-index: 5000; text-align: center; background: url(../../images/newyanzhi/share.png) center 0 no-repeat; background-size: 100%;}
+.shareLayer img { width: 100%;}
+.shareMask { position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 100%; background: rgba(0,0,0,.8)}
+.shareMask2 { position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 100%; background: rgba(0,0,0,.8)}
+.shareLayer2 { position: fixed; left: 0; top: 0; right: 0; bottom: 0; z-index: 5000; text-align: center; background: url(../../images/newyanzhi/share_2.png) center 0 no-repeat; background-size: 100%;}
+.shareLayer2 img { width: 100%;}
+
+/*弹出层*/
+.jDialog { display: none; }
+.mask { position: fixed; z-index: 1000; left: 0; top: 0; right: 0; bottom: 0; z-index: 999; width: 100%; height: 100%; background: rgba(0, 0, 0, .8) }
+.dialog { position: fixed; z-index: 1100; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+/*msg*/
+.dialog.msg .close, .dialog.loading .close { display: none; }
+.dialog.msg + .mask, .dialog.loading + .mask { background: rgba(0, 0, 0, 0); }
+.dialog.msg { white-space: nowrap; padding: .4rem .6rem; font-size: .4rem; border-radius: 10px; background-color: rgba(0, 0, 0, .9); color: #fff; }
+/*alert*/
+.dialog.alert { min-width: 80%; padding: .6rem .26rem; line-height: 1.6; text-align: center; border-radius: 10px; background-color: #de5419; color: #fff; }
+.dialog.alert .h { margin-top: 8px; margin-bottom: .48rem; font-size: .5rem; }
+.dialog.alert .b { margin-bottom: .48rem; font-size: .4rem; }
+.dialog.alert .btn { width: 46%; margin: 2%; background-color: #fff; color: #de5419; }
+/*loading*/
+.dialog.loading { width: 90px; height: 90px; padding-top: 22px; text-align: center; background-color: rgba(0, 0, 0, .8); border-radius: 10px; color: #fff; }
+.dialog.loading:before { content: ''; position: relative; display: inline-block; margin: 0 auto; width: 24px; height: 24px; background: url(http://images.shopin.net/2014/images/load.png) no-repeat center center; -webkit-background-size: 24px; background-size: 24px; animation: circle 2.5s infinite linear; -webkit-animation: circle 2.5s infinite linear; }
+@keyframes circle {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+@-webkit-keyframes circle {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+/*close*/
+.dialog .close { position: absolute; right: -20px; top: -50px; width: 38px; height: 38px; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); border-radius: 100%; border: solid 2px #fff; }
+.dialog .close:before, .dialog .close:after { position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); content: ""; background: #fff; }
+.dialog .close:before { width: 2px; height: 24px; }
+.dialog .close:after { width: 24px; height: 2px; }

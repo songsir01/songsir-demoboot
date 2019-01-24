@@ -7,4 +7,36 @@
         select * from student
         where sid = #{sid}
     </select>
+
+    <insert id="savaFaceInfo" parameterType="com.songsir.bean.Face">
+        INSERT INTO face
+        <trim prefix="(" suffix=")" suffixOverrides="," >
+               <if test="sex != null">
+                  sex,
+               </if>
+               <if test="age != null">
+                  age,
+               </if>
+               <if test="score != null">
+                   score,
+               </if>
+               <if test="imgUrl != null">
+                   imgurl,
+               </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides="," >
+            <if test="sex != null">
+                #{sex},
+            </if>
+            <if test="age != null">
+                #{age},
+            </if>
+            <if test="score != null">
+                #{score},
+            </if>
+            <if test="imgUrl != null">
+                #{imgUrl},
+            </if>
+        </trim>
+    </insert>
 </mapper>

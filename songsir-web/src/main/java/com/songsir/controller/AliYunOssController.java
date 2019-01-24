@@ -3,10 +3,13 @@ package com.songsir.controller;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.aliyun.oss.OSSClient;
+import com.songsir.bean.Face;
+import com.songsir.service.ISongsirService;
 import com.songsir.util.BaiduFaceUtil;
 import com.songsir.util.Base64Util;
 import com.songsir.util.GsonUtils;
 import com.songsir.util.HttpUtil;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -15,6 +18,7 @@ import org.springframework.web.multipart.support.StandardMultipartHttpServletReq
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.*;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -30,6 +34,9 @@ import java.util.Map;
 @Controller
 public class AliYunOssController {
 
+    @Autowired
+    ISongsirService songsirService;
+
 
     public static String ENDPOINT = "http://oss-cn-beijing.aliyuncs.com";
     public static String ACCESSKEYID = "LTAI9rV1x0TmtGjq";
@@ -39,18 +46,6 @@ public class AliYunOssController {
 
     private static final String DERECTURL = "https://aip.baidubce.com/rest/2.0/face/v3/detect";
 
-    /**
-     * @param
-     * @MethodName upload
-     * @Description 页面跳转
-     * @Auther SongYapeng
-     * @Date 2019/1/15 9:16
-     * @Since JDK 1.8
-     */
-    @RequestMapping("/myUpload")
-    public String upload() {
-        return "myUpload";
-    }
 
     /**
      * @param request
@@ -65,7 +60,7 @@ public class AliYunOssController {
     public String myphotoupload(HttpServletRequest request) {
         JSONObject ret = new JSONObject();
         String key = "";
-        String fileNames = "";
+        String name = "";
         ret.put("success", false);
         ret.put("successFace", false);
         ret.put("msg", "请求失败[PU01]");
@@ -75,7 +70,8 @@ public class AliYunOssController {
             while (iterator.hasNext()) {
                 MultipartFile file = req.getFile(iterator.next());
 
-                fileNames = file.getOriginalFilename();
+                String fileNames = file.getOriginalFilename();
+                name = getFileName() + "." + fileNames.split("\\.")[1];
                 InputStream input = file.getInputStream();
 
                 // 一下相当于复制文件流，一个供上传，另一个供人脸识别。但第一次读取InputStream对象后，第二次再读取时可能已经到Stream的结尾了（EOFException）或者Stream已经close掉了。
@@ -94,15 +90,15 @@ public class AliYunOssController {
                 // 创建OSSClient实例
                 OSSClient ossClient = new OSSClient(ENDPOINT, ACCESSKEYID, ACCESSKEYSECRET);
                 // 上传文件流
-                ossClient.putObject(BUCKETNAME, KEY + fileNames, streamForUpload);
+                ossClient.putObject(BUCKETNAME, KEY + name, streamForUpload);
 
                 ossClient.shutdown();
                 // 人脸识别
                 faceReact(streamForFaceReact, ret);
             }
             ret.put("success", true);
-            ret.put("msg", key + fileNames);
-            System.out.println(("图片上传阿里云 name=" + key + fileNames));
+            ret.put("msg", key + name);
+            System.out.println(("图片上传阿里云 name=" + key + name));
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -161,5 +157,61 @@ public class AliYunOssController {
             e.printStackTrace();
         }
         return ret;
+    }
+
+    /**
+     * @param
+     * @MethodName toFace
+     * @Description 到颜值测试页面
+     * @Auther SongYapeng
+     * @Date 2019/1/23 16:31
+     * @Since JDK 1.8
+     */
+    @RequestMapping("/toFace")
+    public String toFace() {
+        return "facePage";
+    }
+
+    /**
+     * @param request
+     * @MethodName savaFaceInfo
+     * @Description 颜值入库
+     * @Auther SongYapeng
+     * @Date 2019/1/23 16:31
+     * @Since JDK 1.8
+     */
+    @ResponseBody
+    @RequestMapping("/savaFaceInfo")
+    public String savaFaceInfo(HttpServletRequest request) {
+        try {
+            String sex = request.getParameter("sex");
+            String age = request.getParameter("age");
+            String score = request.getParameter("score");
+            String imgUrl = request.getParameter("imgUrl");
+            Face face = new Face();
+            face.setAge(Integer.parseInt(age));
+            face.setImgUrl(imgUrl);
+            face.setScore(score);
+            face.setSex(sex);
+            songsirService.savaFaceInfo(face);
+        } catch (NumberFormatException e) {
+            e.printStackTrace();
+            return "err";
+        }
+        return "success";
+    }
+
+    /**
+     * @param
+     * @MethodName getFileName
+     * @Description 图片名称生成
+     * @Auther SongYapeng
+     * @Date 2019/1/24 8:47
+     * @Since JDK 1.8
+     */
+    public static String getFileName() {
+        Date date = new Date();
+        String result = date.getTime() + "";
+        return result;
     }
 }

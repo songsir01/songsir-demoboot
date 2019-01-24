@@ -1,5 +1,6 @@
 package com.songsir.dao.mapper;
 
+import com.songsir.bean.Face;
 import com.songsir.bean.Student;
 
 /**
@@ -14,4 +15,5 @@ public interface SongsirMapper {
 
     Student getDemoStudent(int sid);
 
+    void savaFaceInfo(Face face);
 }

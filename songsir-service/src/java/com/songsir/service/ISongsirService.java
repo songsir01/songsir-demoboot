@@ -1,5 +1,6 @@
 package com.songsir.service;
 
+import com.songsir.bean.Face;
 import com.songsir.bean.Student;
 import com.songsir.bean.Teacher;
 
@@ -17,4 +18,5 @@ public interface ISongsirService {
 
     Teacher getDemoTeacher(int sid);
 
+    void savaFaceInfo(Face face);
 }
