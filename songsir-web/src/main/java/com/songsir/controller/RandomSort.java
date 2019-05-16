@@ -15,9 +15,9 @@ import java.util.Set;
 public class RandomSort {
     public static void main(String[] args) {
         long l = System.currentTimeMillis();
-        Map<Integer, Integer> map = new HashMap<>();
         int size = 10;
         int randomBeishu = 10;
+        Map<Integer, Integer> map = new HashMap<>(size);
         long l1 = System.currentTimeMillis();
         for (int i = 0; i < size; i++) {
             int random = (int) Math.round(Math.random() * randomBeishu);
