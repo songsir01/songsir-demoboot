@@ -1,21 +1,14 @@
 package com.songsir.controller;
 
-import org.junit.jupiter.api.Test;
-
-import java.io.UnsupportedEncodingException;
-import java.net.URLDecoder;
-import java.util.*;
-import java.util.concurrent.*;
-
 /**
  * @PackageName com.songsir.controller
  * @ProjectName songsir-demoboot
- * @Auther: SongYapeng
+ * @Author: SongYapeng
  * @Date: Create in 17:10 2019/4/16
- * @Description:
+ * @Description: 按数字后三位大小排序
  * @Copyright Copyright (c) 2019, songyapeng@shopin.cn All Rights Reserved.
  */
-public class Programmer {
+public class LastThreeSort {
 
     public static void main(String[] args) {
         /**
@@ -71,34 +64,4 @@ public class Programmer {
     }
 }
 
-class Bbbb {
-    public static void main(String[] args) {
 
-        ExecutorService executorService = Executors.newFixedThreadPool(10);
-        long l = System.currentTimeMillis();
-        for (int i = 0; i < 100; i++) {
-            Thread thread = new Thread(() -> System.out.println(111111 + Thread.currentThread().getName()));
-            executorService.submit(thread);
-        }
-        System.out.println(System.currentTimeMillis() - l);
-        executorService.submit(new Ccccc());
-
-//        executorService.submit(thread);
-
-//        ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(5, 25, 0L, TimeUnit.MILLISECONDS, new LinkedBlockingDeque<>(1024));
-
-        String c[] = {"a", "b", "c"};
-        int length = c.length;
-        int length1 = "aaa".length();
-
-    }
-}
-
-class Ccccc implements Runnable {
-
-    @Override
-    public void run() {
-        System.out.println(Thread.currentThread().getName() + 999999);
-
-    }
-}
