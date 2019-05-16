@@ -1,4 +1,4 @@
-package com.songsir.controller;
+package com.songsir.algorithm;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package com.songsir.controller;
+package com.songsir.algorithm;
 
 /**
  * @PackageName com.songsir.controller
