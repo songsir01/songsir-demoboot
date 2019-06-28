@@ -19,7 +19,7 @@ public class AllSortCommont {
             int ss = (int) Math.floor(Math.random() * n);
             a[i] = ss;
         }
-        System.out.println(n + "数据生成：");
+        System.out.print(n + "个数据生成：");
         // 打印生成的数据
         printData(a);
         System.out.println("\n" + n + "个随机数字生成耗时：" + (System.currentTimeMillis() - l));
@@ -188,7 +188,37 @@ class QuickSort {
 class SelectSort {
 
     public static void main(String[] args) {
-        System.out.println("贡献测试");
+        // 排序次数现骨干
+        int times = 6;
+        int[] ns = getSorttimesAndSize(times);
+        for (int n : ns) {
+            // 数据生成
+            int[] data = createData(n);
+            // 选择排序
+            selectSort(data);
+            // 输出结果
+            printSortData(data);
+        }
+    }
+
+    private static void selectSort(int[] data) {
+        long l = System.currentTimeMillis();
+        int k;
+        int temp;
+        for (int i = 0; i <data.length; i++) {
+            k = i;
+            for (int j = i + 1; j < data.length; j++) {
+                if (data[k] > data[j]) {
+                    k = j;
+                }
+            }
+            if (k != i) {
+                temp = data[i];
+                data[i] = data[k];
+                data[k] = temp;
+            }
+        }
+        System.out.println(data.length + "个随机数字选择排序耗时：" + (System.currentTimeMillis() - l));
     }
 
 }
