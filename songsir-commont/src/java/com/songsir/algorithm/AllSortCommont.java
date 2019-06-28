@@ -177,6 +177,14 @@ class QuickSort {
     }
 }
 
+/**
+ * @PackageName com.songsir.algorithm
+ * @ProjectName songsir-demoboot
+ * @Auther: SongYapeng
+ * @Date: Create in 14:09 2019/6/28
+ * @Description: 选择排序
+ * @Copyright Copyright (c) 2019, songyapeng@shopin.cn All Rights Reserved.
+ */
 class SelectSort {
 
     public static void main(String[] args) {
