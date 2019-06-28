@@ -188,7 +188,7 @@ class QuickSort {
 class SelectSort {
 
     public static void main(String[] args) {
-
+        System.out.println("贡献测试");
     }
 
 }
