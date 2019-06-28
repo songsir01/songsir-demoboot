@@ -10,26 +10,26 @@ package com.songsir.algorithm;
  */
 public class FibonacciSequence {
     public static void main(String[] args) {
-        int n = 20;
+        int n = 50;
         long l = System.currentTimeMillis();
         long fibonacci = fibonacci(n);
-        System.out.println(fibonacci);
-        System.out.println("fibonacci耗时：" + (System.currentTimeMillis() - l));
+        System.out.println("斐波那契数列第 " + n + " 位结果："+ fibonacci);
+        System.out.println("动态规划耗时：" + (System.currentTimeMillis() - l) + "\n");
 
         long l2 = System.currentTimeMillis();
         long fibonacci2 = fibonacci2(n);
-        System.out.println(fibonacci2);
-        System.out.println("Fibonacci2耗时：" + (System.currentTimeMillis() - l2));
+        System.out.println("斐波那契数列第 " + n + " 位结果："+ fibonacci2);
+        System.out.println("普通递归耗时：" + (System.currentTimeMillis() - l2) + "\n");
 
         long l3 = System.currentTimeMillis();
         long lastFibonacci = lastFibonacci(n, 1, 1);
-        System.out.println(lastFibonacci);
-        System.out.println("lastFibonacci耗时：" + (System.currentTimeMillis() - l3));
+        System.out.println("斐波那契数列第 " + n + " 位结果："+ lastFibonacci);
+        System.out.println("尾递归耗时：" + (System.currentTimeMillis() - l3) + "\n");
 
         long l4 = System.currentTimeMillis();
         long fibonacci3 = fibonacci3(n);
-        System.out.println(fibonacci3);
-        System.out.println("fibonacci3耗时：" + (System.currentTimeMillis() - l4));
+        System.out.println("斐波那契数列第 " + n + " 位结果："+ fibonacci3);
+        System.out.println("低空间复杂度耗时：" + (System.currentTimeMillis() - l4) + "\n");
 
     }
 
