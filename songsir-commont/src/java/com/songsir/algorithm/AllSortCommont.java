@@ -78,6 +78,14 @@ public class AllSortCommont {
         System.out.println("\n\t");
     }
 }
+/**
+ * @PackageName com.songsir.algorithm
+ * @ProjectName songsir-demoboot
+ * @Auther: SongYapeng
+ * @Date: Create in 14:09 2019/6/28
+ * @Description: 冒泡排序
+ * @Copyright Copyright (c) 2019, songyapeng@shopin.cn All Rights Reserved.
+ */
 class BubbleSort {
     public static void main(String[] args) {
         int times = 5;
@@ -116,10 +124,56 @@ class BubbleSort {
     }
 }
 
+/**
+ * @PackageName com.songsir.algorithm
+ * @ProjectName songsir-demoboot
+ * @Auther: SongYapeng
+ * @Date: Create in 14:09 2019/6/28
+ * @Description: 快速排序
+ * @Copyright Copyright (c) 2019, songyapeng@shopin.cn All Rights Reserved.
+ */
 class QuickSort {
 
     public static void main(String[] args) {
+        int times = 5;
+        int[] ns = getSorttimesAndSize(times);
+        for (int n : ns) {
+            int[] data = createData(n);
+            long l = System.currentTimeMillis();
+            quickSort(data, 0, data.length - 1);
+            System.out.println(data.length + "个随机数字快速排序耗时：" + (System.currentTimeMillis() - l));
+            printSortData(data);
+        }
+    }
 
+    private static void quickSort(int[] data, int left, int right) {
+        int start = left;
+        int end = right;
+        int key = data[left];
+        while (end > start) {
+            while (end > start && data[end] >= key) {
+                end--;
+            }
+            if (data[end] < key) {
+                int temp = data[end];
+                data[end] = data[start];
+                data[start] = temp;
+            }
+            while (end > start && data[start] <= key) {
+                start++;
+            }
+            if (data[start] >= key) {
+                int temp = data[start];
+                data[start] = data[end];
+                data[end] = temp;
+            }
+        }
+        if (start > left) {
+            quickSort(data, left, start - 1);
+        }
+        if (end < right) {
+            quickSort(data, end + 1, right);
+        }
     }
 }
 
