@@ -61,3 +61,32 @@ class SingleTon2 {
     }
 
 }
+
+/**
+ * @PackageName com.songsir.设计模式
+ * @ProjectName songsir-demoboot
+ * @Author: SongYapeng
+ * @Date: Create in 9:23 2019/6/30
+ * @Description: 双重校验锁
+ * @Copyright Copyright (c) 2019, songsir01@163.com All Rights Reserved.
+ */
+class SingleTon3 {
+
+    private volatile static SingleTon3 singleTon;
+
+    private SingleTon3() {
+
+    }
+
+    public static SingleTon3 getSingleTon() {
+        if (singleTon == null) {
+            synchronized (SingleTon3.class) {
+                if (singleTon == null) {
+                    singleTon = new SingleTon3();
+                }
+            }
+        }
+        return singleTon;
+    }
+
+}
