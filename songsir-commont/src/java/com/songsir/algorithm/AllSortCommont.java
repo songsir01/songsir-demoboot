@@ -252,7 +252,18 @@ class InsertSort {
      * @Since JDK 1.8
      */
     private static void insertSort(int[] data) {
-
+        int length = data.length;
+        for (int out = 1; out < length; out++) {
+            int temp = data[out];
+            int in = out;
+            while (in - 1 >= 0 && data[in - 1] > temp) {
+                data[in] = data[in - 1];
+                in--;
+            }
+            if (in != out) {
+                data[in] = temp;
+            }
+        }
     }
 
 }
