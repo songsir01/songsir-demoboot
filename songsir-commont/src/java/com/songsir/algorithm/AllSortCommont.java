@@ -222,3 +222,37 @@ class SelectSort {
     }
 
 }
+
+/**
+ * @PackageName com.songsir.algorithm
+ * @ProjectName songsir-demoboot
+ * @Auther: SongYapeng
+ * @Date: Create in 14:09 2019/7/3
+ * @Description: 插入排序
+ * @Copyright Copyright (c) 2019, songyapeng@shopin.cn All Rights Reserved.
+ */
+class InsertSort {
+
+    public static void main(String[] args) {
+        int times = 6;
+        int[] ns = getSorttimesAndSize(times);
+        for (int n : ns) {
+            int[] data = createData(n);
+            insertSort(data);
+            printSortData(data);
+        }
+    }
+
+    /**
+     * @MethodName insertSort
+     * @Description 插入排序
+     * @Auther SongYapeng
+     * @Date 2019/7/3 17:28
+     * @param data
+     * @Since JDK 1.8
+     */
+    private static void insertSort(int[] data) {
+
+    }
+
+}
