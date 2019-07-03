@@ -237,8 +237,11 @@ class InsertSort {
         int times = 6;
         int[] ns = getSorttimesAndSize(times);
         for (int n : ns) {
+            // 数据生成
             int[] data = createData(n);
+            // 排序
             insertSort(data);
+            // 打印输出
             printSortData(data);
         }
     }
