@@ -27,11 +27,11 @@ public class AllSortCommont {
     }
 
     /**
+     * @param data
      * @MethodName printData
      * @Description 数据输出，中间使用...代替
      * @Auther SongYapeng
      * @Date 2019/6/10 14:12
-     * @param data
      * @Since JDK 1.8
      */
     private static void printData(int[] data) {
@@ -49,11 +49,11 @@ public class AllSortCommont {
     }
 
     /**
+     * @param times
      * @MethodName getSorttimesAndSize
      * @Description 定义排序的分组数
      * @Auther SongYapeng
      * @Date 2019/6/10 14:14
-     * @param times
      * @Since JDK 1.8
      */
     public static int[] getSorttimesAndSize(int times) {
@@ -65,11 +65,11 @@ public class AllSortCommont {
     }
 
     /**
+     * @param data
      * @MethodName printSortData
      * @Description 排序后输出
      * @Auther SongYapeng
      * @Date 2019/6/10 14:19
-     * @param data
      * @Since JDK 1.8
      */
     public static void printSortData(int[] data) {
@@ -78,6 +78,7 @@ public class AllSortCommont {
         System.out.println("\n\t");
     }
 }
+
 /**
  * @PackageName com.songsir.algorithm
  * @ProjectName songsir-demoboot
@@ -101,11 +102,11 @@ class BubbleSort {
     }
 
     /**
+     * @param data
      * @MethodName bubbleSort
      * @Description 冒泡排序
      * @Auther SongYapeng
      * @Date 2019/6/10 14:20
-     * @param data
      * @Since JDK 1.8
      */
     private static void bubbleSort(int[] data) {
@@ -205,7 +206,7 @@ class SelectSort {
         long l = System.currentTimeMillis();
         int k;
         int temp;
-        for (int i = 0; i <data.length; i++) {
+        for (int i = 0; i < data.length; i++) {
             k = i;
             for (int j = i + 1; j < data.length; j++) {
                 if (data[k] > data[j]) {
@@ -247,11 +248,11 @@ class InsertSort {
     }
 
     /**
+     * @param data
      * @MethodName insertSort
      * @Description 插入排序
      * @Auther SongYapeng
      * @Date 2019/7/3 17:28
-     * @param data
      * @Since JDK 1.8
      */
     private static void insertSort(int[] data) {
@@ -266,6 +267,52 @@ class InsertSort {
             if (in != out) {
                 data[in] = temp;
             }
+        }
+    }
+
+}
+
+/**
+ * @PackageName com.songsir.algorithm
+ * @ProjectName songsir-demoboot
+ * @Auther: SongYapeng
+ * @Date: Create in 14:09 2019/7/5
+ * @Description: 希尔排序
+ * @Copyright Copyright (c) 2019, songyapeng@shopin.cn All Rights Reserved.
+ */
+class ShellSort {
+
+    public static void main(String[] args) {
+        int times = 6;
+        int[] ns = getSorttimesAndSize(times);
+        for (int n : ns) {
+            int[] data = createData(n);
+            long l = System.currentTimeMillis();
+            shellSort(data);
+            System.out.println(data.length + "个随机数字希尔排序耗时：" + (System.currentTimeMillis() - l));
+            printSortData(data);
+        }
+    }
+
+    private static void shellSort(int[] data) {
+        int length = data.length;
+        int h = 1;
+        while (h < length / 3) {
+            h = h * 3 + 1;
+        }
+        while (h > 0) {
+            for (int out = h; out < length; out++) {
+                int temp = data[out];
+                int in = out;
+                while (in - h >= 0 && data[in - h] > temp) {
+                    data[in] = data[in - h];
+                    in = in - h;
+                }
+                if (in != out) {
+                    data[in] = temp;
+                }
+            }
+            h = (h - 1) / 3;
         }
     }
 
