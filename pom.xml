@@ -24,4 +24,8 @@
         <module>songsir-commont</module>
     </modules>
 
+    <dependencyManagement>
+
+    </dependencyManagement>
+
 </project>
