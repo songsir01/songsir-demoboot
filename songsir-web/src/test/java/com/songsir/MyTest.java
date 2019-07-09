@@ -1,6 +1,7 @@
 package com.songsir;
 
 import com.alibaba.fastjson.JSON;
+import com.songsir.bean.LombokBean;
 import com.songsir.bean.TBean;
 import org.junit.Test;
 
@@ -107,6 +108,13 @@ class Ee {
         for(int i = 0 ;i < 2000; i ++) {
             System.out.println(i + " " + (char)i);
         }
+    }
+}
+
+class TestLomBok {
+
+    public static void main(String[] args) {
+
     }
 }
 
