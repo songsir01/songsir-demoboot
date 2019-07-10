@@ -17,6 +17,14 @@ import java.util.Map;
 @ToString
 public class LombokBean {
 
+    /**
+     * idea 下载lombok插件，重启；setting --> Build... ---> Annotation Processors ---> 选中 enable annotation processing
+     * 然后就可以使用lombok注解
+     */
+
+
+    @Setter
+    @Getter
     private int id;
 
     private String name;
