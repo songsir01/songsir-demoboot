@@ -52,10 +52,10 @@
             <artifactId>gson</artifactId>
         </dependency>
 
-        <dependency>
+       <!-- <dependency>
             <groupId>net.sf.json-lib</groupId>
             <artifactId>json-lib</artifactId>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>commons-beanutils</groupId>
             <artifactId>commons-beanutils</artifactId>
