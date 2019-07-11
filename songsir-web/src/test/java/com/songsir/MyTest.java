@@ -114,7 +114,9 @@ class Ee {
 class TestLomBok {
 
     public static void main(String[] args) {
-
+        LombokBean lombokBean = new LombokBean();
+        lombokBean.setId(123);
+        System.out.println(lombokBean.toString());
     }
 }
 
