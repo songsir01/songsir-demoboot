@@ -25,13 +25,18 @@ public class SafeDemo {
     // ThreadPoolExecutor.DiscardPolicy：丢弃任务不抛出异常。 
     // ThreadPoolExecutor.DiscardOldestPolicy：丢弃队列最前面的任务，然后重新尝试执行任务（重复此过程） 
     // ThreadPoolExecutor.CallerRunsPolicy：由调用线程处理该任务
-    private static ThreadPoolExecutor.CallerRunsPolicy rejectHandler = new ThreadPoolExecutor.CallerRunsPolicy();
+
+    // private static ThreadPoolExecutor.AbortPolicy rejectHandler = new ThreadPoolExecutor.AbortPolicy();
+    // private static ThreadPoolExecutor.DiscardPolicy rejectHandler = new ThreadPoolExecutor.DiscardPolicy();
+    private static ThreadPoolExecutor.DiscardOldestPolicy rejectHandler = new ThreadPoolExecutor.DiscardOldestPolicy();
+    // private static ThreadPoolExecutor.CallerRunsPolicy rejectHandler = new ThreadPoolExecutor.CallerRunsPolicy();
+
     // 尽量不使用Executors创建线程池，Executors有可能导致OOM发生
     public static ThreadPoolExecutor poolExecutor = new ThreadPoolExecutor(COREPOOLSIZE, MAXIMUMPOOLSIZE, KEEPALIVETIME, TimeUnit.SECONDS, new LinkedBlockingDeque<>(QUESIZE), Thread::new, rejectHandler);
 
     public static void main(String[] args) throws InterruptedException {
         AtomicInteger cnt = new AtomicInteger();
-        int forSize = 100000;
+        int forSize = 1000;
         CountDownLatch countDownLatch = new CountDownLatch(forSize);
         for (int i = 0; i < forSize; i++) {
             Runnable runnable = () -> {

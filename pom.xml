@@ -34,11 +34,25 @@
         <ezmorph.version>1.0.3</ezmorph.version>
         <oss.version>2.8.2</oss.version>
         <jstl.api.version>1.2</jstl.api.version>
+        <spring.redis.version>1.4.2.RELEASE</spring.redis.version>
     </properties>
 
     <!-- 声明依赖不引入 -->
     <dependencyManagement>
         <dependencies>
+
+            <dependency>
+                <groupId>redis.clients</groupId>
+                <artifactId>jedis</artifactId>
+                <version>${jedis.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-redis</artifactId>
+                <version>${spring.redis.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
