@@ -19,6 +19,7 @@ import org.springframework.boot.web.support.SpringBootServletInitializer;
  */
 @SpringBootApplication
 @MapperScan("com.songsir.dao")
+@ServletComponentScan
 public class SongsirApplication extends SpringBootServletInitializer implements CommandLineRunner {
 
     public static void main(String[] args) {
