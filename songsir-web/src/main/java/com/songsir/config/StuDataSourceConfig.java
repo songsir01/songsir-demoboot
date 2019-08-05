@@ -5,6 +5,8 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.mybatis.spring.annotation.MapperScan;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -29,7 +31,9 @@ import java.util.Properties;
 @MapperScan(basePackages = StuDataSourceConfig.STU_PACKAGE, sqlSessionFactoryRef = "defaultSqlSessionFactory")
 public class StuDataSourceConfig {
 
-    // 扫描dao包
+    private Logger log = LoggerFactory.getLogger(TeaDataSourceConfig.class);
+
+    /** 扫描dao包 */
     static final String STU_PACKAGE = "com.songsir.dao.mapper";
 
     @Value("${spring.datasource.one.url}")
@@ -42,70 +46,65 @@ public class StuDataSourceConfig {
     private String password;
 
     @Value("${spring.datasource.driver-class-name}")
-    protected static String driverClassName;
+    protected String driverClassName;
 
     @Value("${spring.datasource.initialSize}")
-    protected static int initialSize;
+    protected int initialSize;
 
     @Value("${spring.datasource.maxActive}")
-    protected static int maxActive;
+    protected int maxActive;
 
     @Value("${spring.datasource.removeAbandoned}")
-    protected static boolean removeAbandoned;
+    protected boolean removeAbandoned;
 
     @Value("${spring.datasource.removeAbandonedTimeout}")
-    protected static int removeAbandonedTimeout;
+    protected int removeAbandonedTimeout;
 
     @Value("${spring.datasource.timeBetweenEvictionRunsMillis}")
-    protected static int timeBetweenEvictionRunsMillis;
+    protected int timeBetweenEvictionRunsMillis;
 
     @Value("${spring.datasource.validationQuery}")
-    protected static String validationQuery;
+    protected String validationQuery;
 
     @Value("${spring.datasource.testWhileIdle}")
-    protected static boolean testWhileIdle;
+    protected boolean testWhileIdle;
 
     @Value("${spring.datasource.testOnBorrow}")
-    protected static boolean testOnBorrow;
+    protected boolean testOnBorrow;
 
     @Value("${spring.datasource.testOnReturn}")
-    protected static boolean testOnReturn;
+    protected boolean testOnReturn;
 
     @Value("${spring.datasource.filters}")
-    protected static String filters;
+    protected String filters;
 
     @Value("${spring.datasource.connectionProperties}")
-    protected static Properties connectionProperties;
+    protected Properties connectionProperties;
 
     @Bean(name = "dataSource")
     @Primary
     public DataSource getDataSource() {
-        DruidDataSource druidDataSource = new DruidDataSource();
-        druidDataSource.setUrl(this.url);
-        druidDataSource.setUsername(this.username);
-        druidDataSource.setPassword(this.password);
-        return getDataSource(druidDataSource);
-    }
-
-    protected static DataSource getDataSource(DruidDataSource druidDataSource) {
-        druidDataSource.setDriverClassName(driverClassName);
-        // druid配置
-        druidDataSource.setInitialSize(initialSize);
-        druidDataSource.setMaxActive(maxActive);
-        druidDataSource.setRemoveAbandoned(removeAbandoned);
-        druidDataSource.setRemoveAbandonedTimeout(removeAbandonedTimeout);
-        druidDataSource.setTimeBetweenEvictionRunsMillis(timeBetweenEvictionRunsMillis);
-        druidDataSource.setValidationQuery(validationQuery);
-        druidDataSource.setTestWhileIdle(testWhileIdle);
-        druidDataSource.setTestOnBorrow(testOnBorrow);
-        druidDataSource.setTestOnReturn(testOnReturn);
+        DruidDataSource stuDruidDataSource = new DruidDataSource();
+        stuDruidDataSource.setUrl(this.url);
+        stuDruidDataSource.setUsername(this.username);
+        stuDruidDataSource.setPassword(this.password);
+        stuDruidDataSource.setDriverClassName(driverClassName);
+        stuDruidDataSource.setInitialSize(initialSize);
+        stuDruidDataSource.setMaxActive(maxActive);
+        stuDruidDataSource.setRemoveAbandoned(removeAbandoned);
+        stuDruidDataSource.setRemoveAbandonedTimeout(removeAbandonedTimeout);
+        stuDruidDataSource.setTimeBetweenEvictionRunsMillis(timeBetweenEvictionRunsMillis);
+        stuDruidDataSource.setValidationQuery(validationQuery);
+        stuDruidDataSource.setTestWhileIdle(testWhileIdle);
+        stuDruidDataSource.setTestOnBorrow(testOnBorrow);
+        stuDruidDataSource.setTestOnReturn(testOnReturn);
         try {
-            druidDataSource.setFilters(filters);
+            stuDruidDataSource.setFilters(filters);
         } catch (SQLException e) {
-            System.err.println("druid configuration initialization filter: " + e);
+            log.error("主数据源出错" + e);
         }
-        druidDataSource.setConnectProperties(connectionProperties);
-        return druidDataSource;
+        stuDruidDataSource.setConnectProperties(connectionProperties);
+        return stuDruidDataSource;
     }
 
     @Bean(name = "defaultSqlSessionFactory")
@@ -125,13 +124,13 @@ public class StuDataSourceConfig {
 
     @Bean(name = "defaultSqlSessionTemplate")
     @Primary
-    public SqlSessionTemplate defaultSqlSessionTemplate(SqlSessionFactory sqlSessionFactory) {
+    public SqlSessionTemplate defaultSqlSessionTemplate(SqlSessionFactory sqlSessionFactory){
         return new SqlSessionTemplate(sqlSessionFactory);
     }
 
     @Bean(name = "defaultTransactionManager")
     @Primary
-    public DataSourceTransactionManager defaultAnnotationDrivenTransactionManager() {
+    public DataSourceTransactionManager defaultAnnotationDrivenTransactionManager(){
         return new DataSourceTransactionManager(getDataSource());
     }
 }

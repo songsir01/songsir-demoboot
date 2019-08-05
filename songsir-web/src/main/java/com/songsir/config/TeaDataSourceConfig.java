@@ -5,6 +5,8 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.mybatis.spring.annotation.MapperScan;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -13,8 +15,8 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 
 import javax.sql.DataSource;
-
-import static com.songsir.config.StuDataSourceConfig.getDataSource;
+import java.sql.SQLException;
+import java.util.Properties;
 
 /**
  * @PackageName com.songsir.config
@@ -28,9 +30,9 @@ import static com.songsir.config.StuDataSourceConfig.getDataSource;
 @MapperScan(basePackages = TeaDataSourceConfig.TEA_PACKAGE, sqlSessionFactoryRef = "salveSqlSessionFactory")
 public class TeaDataSourceConfig {
 
-    /**
-     * 扫描dao包
-     */
+    private Logger log = LoggerFactory.getLogger(TeaDataSourceConfig.class);
+
+    /** 扫描dao包 */
     static final String TEA_PACKAGE = "com.songsir.dao.mapper2";
 
     @Value("${spring.datasource.two.url}")
@@ -42,13 +44,66 @@ public class TeaDataSourceConfig {
     @Value("${spring.datasource.two.password}")
     private String salvePassword;
 
+    @Value("${spring.datasource.driver-class-name}")
+    protected String driverClassName;
+
+    @Value("${spring.datasource.salve.initialSize}")
+    protected int salveInitialSize;
+
+    @Value("${spring.datasource.salve.maxActive}")
+    protected int salveMaxActive;
+
+    @Value("${spring.datasource.salve.removeAbandoned}")
+    protected boolean salveRemoveAbandoned;
+
+    @Value("${spring.datasource.salve.removeAbandonedTimeout}")
+    protected int salveRemoveAbandonedTimeout;
+
+    @Value("${spring.datasource.salve.timeBetweenEvictionRunsMillis}")
+    protected int salveTimeBetweenEvictionRunsMillis;
+
+    @Value("${spring.datasource.salve.validationQuery}")
+    protected String salveValidationQuery;
+
+    @Value("${spring.datasource.salve.testWhileIdle}")
+    protected boolean salveTestWhileIdle;
+
+    @Value("${spring.datasource.salve.testOnBorrow}")
+    protected boolean salveTestOnBorrow;
+
+    @Value("${spring.datasource.salve.testOnReturn}")
+    protected boolean salveTestOnReturn;
+
+    @Value("${spring.datasource.salve.filters}")
+    protected String salveFilters;
+
+    @Value("${spring.datasource.salve.connectionProperties}")
+    protected Properties salveConnectionProperties;
+
+
     @Bean(name = "salveDataSource")
     public DataSource getSalveDataSource() {
-        DruidDataSource druidDataSource = new DruidDataSource();
-        druidDataSource.setUrl(this.salveUrl);
-        druidDataSource.setUsername(this.salveUsername);
-        druidDataSource.setPassword(this.salvePassword);
-        return getDataSource(druidDataSource);
+        DruidDataSource teaDruidDataSource = new DruidDataSource();
+        teaDruidDataSource.setUrl(this.salveUrl);
+        teaDruidDataSource.setUsername(this.salveUsername);
+        teaDruidDataSource.setPassword(this.salvePassword);
+        teaDruidDataSource.setDriverClassName(this.driverClassName);
+        teaDruidDataSource.setInitialSize(this.salveInitialSize);
+        teaDruidDataSource.setMaxActive(this.salveMaxActive);
+        teaDruidDataSource.setRemoveAbandoned(this.salveRemoveAbandoned);
+        teaDruidDataSource.setRemoveAbandonedTimeout(this.salveRemoveAbandonedTimeout);
+        teaDruidDataSource.setTimeBetweenEvictionRunsMillis(this.salveTimeBetweenEvictionRunsMillis);
+        teaDruidDataSource.setValidationQuery(this.salveValidationQuery);
+        teaDruidDataSource.setTestWhileIdle(this.salveTestWhileIdle);
+        teaDruidDataSource.setTestOnBorrow(this.salveTestOnBorrow);
+        teaDruidDataSource.setTestOnReturn(this.salveTestOnReturn);
+        try {
+            teaDruidDataSource.setFilters(salveFilters);
+        } catch (SQLException e) {
+            log.error("从数据源出错" + e);
+        }
+        teaDruidDataSource.setConnectProperties(salveConnectionProperties);
+        return teaDruidDataSource;
     }
 
     @Bean(name = "salveSqlSessionFactory")
