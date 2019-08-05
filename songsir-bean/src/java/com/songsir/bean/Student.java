@@ -18,6 +18,8 @@ public class Student {
 
     private String Ssex;
 
+    private String Sphone;
+
     @Override
     public String toString() {
         return "Student{" +
@@ -25,6 +27,7 @@ public class Student {
                 ", Sname='" + Sname + '\'' +
                 ", Sage='" + Sage + '\'' +
                 ", Ssex='" + Ssex + '\'' +
+                ", Sphone='" + Sphone + '\'' +
                 '}';
     }
 
@@ -58,5 +61,13 @@ public class Student {
 
     public void setSsex(String ssex) {
         Ssex = ssex;
+    }
+
+    public String getSphone() {
+        return Sphone;
+    }
+
+    public void setSphone(String sphone) {
+        Sphone = sphone;
     }
 }

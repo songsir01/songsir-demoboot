@@ -9,6 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.servlet.http.HttpServletRequest;
+
 /**
  * @PackageName com.songsir.controller
  * @ProjectName songsir-demoboot
@@ -26,10 +28,11 @@ public class SongsirController {
     ISongsirService songsirService;
 
     @RequestMapping("/studentDemo")
-    public String firstDemo(int sid) {
+    public String firstDemo(int sid, HttpServletRequest request) {
         Student student = songsirService.getDemoStudent(sid);
         logger.info(student.toString());
-        return student.toString();
+        request.setAttribute("sphone", student.getSphone());
+        return "tiaoxingma";
     }
 
     @RequestMapping("/teacherDemo")
