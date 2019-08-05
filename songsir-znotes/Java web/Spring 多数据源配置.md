@@ -72,7 +72,7 @@ import java.util.Properties;
 /**
  * @PackageName com.songsir.config
  * @ProjectName songsir-demoboot
- * @Auther: SongYapeng
+ * @Author: SongYapeng
  * @Date: Create in 11:27 2018/12/7
  * @Description:
  * @Copyright Copyright (c) 2018, songyapeng@shopin.cn All Rights Reserved.
@@ -225,7 +225,7 @@ import java.util.Properties;
 /**
  * @PackageName com.songsir.config
  * @ProjectName songsir-demoboot
- * @Auther: SongYapeng
+ * @Author: SongYapeng
  * @Date: Create in 11:28 2018/12/7
  * @Description:
  * @Copyright Copyright (c) 2018, songyapeng@shopin.cn All Rights Reserved.

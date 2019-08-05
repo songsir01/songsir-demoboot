@@ -1,41 +1,41 @@
 [toc]
-# Ò»¡¢¿ªÍ¨ÕËºÅ
+# Ò»ï¿½ï¿½ï¿½ï¿½Í¨ï¿½Ëºï¿½
 
-## 1¡¢È¥×¢²á
-µã»÷Á´½Ó£º[https://help.aliyun.com/product/31815.html](https://help.aliyun.com/product/31815.html) ×¢²á¡£
+## 1ï¿½ï¿½È¥×¢ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó£ï¿½[https://help.aliyun.com/product/31815.html](https://help.aliyun.com/product/31815.html) ×¢ï¿½á¡£
 
-## 2¡¢³É¹¦ºóÁìÈ¡Ãâ·ÑÌ×²Í
-![ÔÚÕâÀï²åÈëÍ¼Æ¬ÃèÊö](https://img-blog.csdnimg.cn/20190111180338830.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NvbmdTaXIwMDE=,size_16,color_FFFFFF,t_70)
- - ÊµÃûÈÏÖ¤£¬¿ÉÒÔÓÃÖ§¸¶±¦Ö±½ÓÈÏÖ¤
- - ÈÏÖ¤ÍêÁìÈ¡Ãâ·ÑÌ×²Í
- ![ÔÚÕâÀï²åÈëÍ¼Æ¬ÃèÊö](https://img-blog.csdnimg.cn/20190111180431455.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NvbmdTaXIwMDE=,size_16,color_FFFFFF,t_70)
- ## 3¡¢¿ªÍ¨¼¤»î
-  - ²é¿´ÏûÏ¢£¬µã»÷¿ªÍ¨
-  ![ÔÚÕâÀï²åÈëÍ¼Æ¬ÃèÊö](https://img-blog.csdnimg.cn/20190111180604229.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NvbmdTaXIwMDE=,size_16,color_FFFFFF,t_70)
-  ![ÔÚÕâÀï²åÈëÍ¼Æ¬ÃèÊö](https://img-blog.csdnimg.cn/20190111180612201.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NvbmdTaXIwMDE=,size_16,color_FFFFFF,t_70)
- ## 4¡¢ÐÂ½¨bucket
- ![ÔÚÕâÀï²åÈëÍ¼Æ¬ÃèÊö](https://img-blog.csdnimg.cn/20190111180711439.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NvbmdTaXIwMDE=,size_16,color_FFFFFF,t_70)
- ## 5¡¢»ñÈ¡AccessKey£¬±¸ÓÃ
- £¨1£©´ò¿ª[°¢ÀïÔÆ¿ØÖÆÌ¨](https://home.console.aliyun.com/new?spm=a2c4g.11186623.2.10.77d32974Dzitvi#/)
- £¨2£©½«Êó±ê·ÅÔÚÓÒÉÏ·½µÄÓÃ»§ÃûÇøÓò£¬ÔÚµ¯³öµÄ¿ì½Ý²Ëµ¥ÖÐÑ¡Ôñaccesskeys¡£
- ![ÔÚÕâÀï²åÈëÍ¼Æ¬ÃèÊö](https://img-blog.csdnimg.cn/20190111181236425.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NvbmdTaXIwMDE=,size_16,color_FFFFFF,t_70)
- £¨3£©µÚÒ»´ÎÐèÒªÉú³ÉÐÂµÄaccesskeys¡£
- Éú³ÉºóÈçÏÂ£º
- ![ÔÚÕâÀï²åÈëÍ¼Æ¬ÃèÊö](https://img-blog.csdnimg.cn/20190111181352666.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NvbmdTaXIwMDE=,size_16,color_FFFFFF,t_70)
-# ¶þ¡¢Í¼Æ¬ÉÏ´«
-## 1¡¢SpringBootÏîÄ¿×¼±¸
+## 2ï¿½ï¿½ï¿½É¹ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½×²ï¿½
+![ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½](https://img-blog.csdnimg.cn/20190111180338830.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NvbmdTaXIwMDE=,size_16,color_FFFFFF,t_70)
+ - Êµï¿½ï¿½ï¿½ï¿½Ö¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö§ï¿½ï¿½ï¿½ï¿½Ö±ï¿½ï¿½ï¿½ï¿½Ö¤
+ - ï¿½ï¿½Ö¤ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½×²ï¿½
+ ![ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½](https://img-blog.csdnimg.cn/20190111180431455.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NvbmdTaXIwMDE=,size_16,color_FFFFFF,t_70)
+ ## 3ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½
+  - ï¿½é¿´ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¨
+  ![ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½](https://img-blog.csdnimg.cn/20190111180604229.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NvbmdTaXIwMDE=,size_16,color_FFFFFF,t_70)
+  ![ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½](https://img-blog.csdnimg.cn/20190111180612201.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NvbmdTaXIwMDE=,size_16,color_FFFFFF,t_70)
+ ## 4ï¿½ï¿½ï¿½Â½ï¿½bucket
+ ![ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½](https://img-blog.csdnimg.cn/20190111180711439.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NvbmdTaXIwMDE=,size_16,color_FFFFFF,t_70)
+ ## 5ï¿½ï¿½ï¿½ï¿½È¡AccessKeyï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ ï¿½ï¿½1ï¿½ï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½Æ¿ï¿½ï¿½ï¿½Ì¨](https://home.console.aliyun.com/new?spm=a2c4g.11186623.2.10.77d32974Dzitvi#/)
+ ï¿½ï¿½2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï·ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½ï¿½Ä¿ï¿½Ý²Ëµï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½accesskeysï¿½ï¿½
+ ![ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½](https://img-blog.csdnimg.cn/20190111181236425.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NvbmdTaXIwMDE=,size_16,color_FFFFFF,t_70)
+ ï¿½ï¿½3ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½Âµï¿½accesskeysï¿½ï¿½
+ ï¿½ï¿½ï¿½Éºï¿½ï¿½ï¿½ï¿½Â£ï¿½
+ ![ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½](https://img-blog.csdnimg.cn/20190111181352666.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NvbmdTaXIwMDE=,size_16,color_FFFFFF,t_70)
+# ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½Ï´ï¿½
+## 1ï¿½ï¿½SpringBootï¿½ï¿½Ä¿×¼ï¿½ï¿½
 
- - Ê¹ÓÃÒÔÇ°´î½¨µÄSpringBootÏîÄ¿
- - ÒýÈë°¢ÀïÔÆOSSÒÀÀµ
- - ÅäÖÃJSPÖ§³Ö
+ - Ê¹ï¿½ï¿½ï¿½ï¿½Ç°ï¿½î½¨ï¿½ï¿½SpringBootï¿½ï¿½Ä¿
+ - ï¿½ï¿½ï¿½ë°¢ï¿½ï¿½ï¿½ï¿½OSSï¿½ï¿½ï¿½ï¿½
+ - ï¿½ï¿½ï¿½ï¿½JSPÖ§ï¿½ï¿½
  
-### £¨1£©SpringBootÏîÄ¿
+### ï¿½ï¿½1ï¿½ï¿½SpringBootï¿½ï¿½Ä¿
 
-Çë²Î¿¼
- -  [SpringBootÏîÄ¿´î½¨](https://blog.csdn.net/SongSir001/article/details/80436415)
- -  [SpringBoot¶àÊý¾ÝÔ´ÅäÖÃ](https://blog.csdn.net/SongSir001/article/details/84875619)
+ï¿½ï¿½Î¿ï¿½
+ -  [SpringBootï¿½ï¿½Ä¿ï¿½î½¨](https://blog.csdn.net/SongSir001/article/details/80436415)
+ -  [SpringBootï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô´ï¿½ï¿½ï¿½ï¿½](https://blog.csdn.net/SongSir001/article/details/84875619)
  
-### £¨2£©ÒýÈë°¢ÀïÔÆOSSÒÀÀµ
+### ï¿½ï¿½2ï¿½ï¿½ï¿½ï¿½ï¿½ë°¢ï¿½ï¿½ï¿½ï¿½OSSï¿½ï¿½ï¿½ï¿½
 
 
 ```
@@ -45,8 +45,8 @@
     <version>2.8.2</version>
 </dependency>
 ```
-### £¨3£©SpringBoot¶ÔJSPÖ§³Ö
-1£©ÒýÈëtomcat¡¢jstl¡¢jspµÈÏà¹ØµÄÖ§³ÖÒÀÀµ
+### ï¿½ï¿½3ï¿½ï¿½SpringBootï¿½ï¿½JSPÖ§ï¿½ï¿½
+1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½tomcatï¿½ï¿½jstlï¿½ï¿½jspï¿½ï¿½ï¿½ï¿½Øµï¿½Ö§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 
 ```
@@ -65,7 +65,7 @@
     <artifactId>jstl</artifactId>
 </dependency>
 ```
-2£©ÅäÖÃJSPÂ·¾¶
+2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½JSPÂ·ï¿½ï¿½
 
 
 ```
@@ -77,7 +77,7 @@ import org.springframework.web.servlet.view.JstlView;
 /**
  * @PackageName com.songsir.config
  * @ProjectName songsir-demoboot
- * @Auther: SongYapeng
+ * @Author: SongYapeng
  * @Date: Create in 9:34 2019/1/15
  * @Description:
  * @Copyright Copyright (c) 2018, songyapeng@shopin.cn All Rights Reserved.
@@ -97,10 +97,10 @@ public class PageMVCConfig {
 
 ```
 
-## 2¡¢Ò³Ãæ×¼±¸
-### £¨1£©ÒýÈëJS
-ÒýÈëajaxfileupload.jsºÍjquery.jsÁ½¸öjs¸¨ÖúÍ¼Æ¬ÉÏ´«¡£
-### £¨2£©¼òµ¥Ò³Ãæ´úÂë
+## 2ï¿½ï¿½Ò³ï¿½ï¿½×¼ï¿½ï¿½
+### ï¿½ï¿½1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½JS
+ï¿½ï¿½ï¿½ï¿½ajaxfileupload.jsï¿½ï¿½jquery.jsï¿½ï¿½ï¿½ï¿½jsï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½Ï´ï¿½ï¿½ï¿½
+### ï¿½ï¿½2ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½ï¿½ï¿½ï¿½
 
 ```
 <%--
@@ -125,7 +125,7 @@ public class PageMVCConfig {
     function upload(event){
         if(event.target.files.length == 1 ) {
             if (event.target.files[0].size >= 4096000) {
-                alert('ÄúÕâÕÅÍ¼Æ¬¹ý´ó£¬Ó¦Ð¡ÓÚ4M');
+                alert('ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½Ó¦Ð¡ï¿½ï¿½4M');
             }else{
                 $.ajaxFileUpload({url:'photoupload',
                     secureuri:false,
@@ -135,13 +135,13 @@ public class PageMVCConfig {
                         alert(data);
                     },
                     error: function (data, status, e){
-                        aler("ÉÏ´«Í¼Æ¬Ê§°Ü£¬ÇëÉÔºóÖØÊÔ¡£");
+                        aler("ï¿½Ï´ï¿½Í¼Æ¬Ê§ï¿½Ü£ï¿½ï¿½ï¿½ï¿½Ôºï¿½ï¿½ï¿½ï¿½Ô¡ï¿½");
                         closeLoad();
                     }
                 });
             }
         }else{
-            alert('ÄúÉÏ´«µÄ²»ÊÇÍ¼Æ¬£¬ÇëÑ¡ÔñÍ¼Æ¬ÉÏ´«');
+            alert('ï¿½ï¿½ï¿½Ï´ï¿½ï¿½Ä²ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½Í¼Æ¬ï¿½Ï´ï¿½');
         }
     }
 </script>
@@ -149,18 +149,18 @@ public class PageMVCConfig {
 </html>
 
 ```
-¾ßÌå½á¹¹ÈçÏÂ£º
-![ÔÚÕâÀï²åÈëÍ¼Æ¬ÃèÊö](https://img-blog.csdnimg.cn/20190115101254250.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NvbmdTaXIwMDE=,size_16,color_FFFFFF,t_70)
-## 3¡¢ºóÌ¨·½·¨ÊµÏÖ
-### £¨1£©Ò³ÃæÌø×ª
-Ð´·½·¨Ìøµ½ÉÏ´«Í¼Æ¬Ò³
+ï¿½ï¿½ï¿½ï¿½á¹¹ï¿½ï¿½ï¿½Â£ï¿½
+![ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½](https://img-blog.csdnimg.cn/20190115101254250.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NvbmdTaXIwMDE=,size_16,color_FFFFFF,t_70)
+## 3ï¿½ï¿½ï¿½ï¿½Ì¨ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½
+### ï¿½ï¿½1ï¿½ï¿½Ò³ï¿½ï¿½ï¿½ï¿½×ª
+Ð´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½Í¼Æ¬Ò³
 
 ```
 /**
      * @param
      * @MethodName upload
-     * @Description Ò³ÃæÌø×ª
-     * @Auther SongYapeng
+     * @Description Ò³ï¿½ï¿½ï¿½ï¿½×ª
+     * @Author SongYapeng
      * @Date 2019/1/15 9:16
      * @Since JDK 1.8
      */
@@ -169,17 +169,17 @@ public class PageMVCConfig {
         return "myUpload";
     }
 ```
-### £¨2£©ÉÏ´«Í¼Æ¬´úÂë
-1£©»ñÈ¡°¢ÀïÔÆOSSÏà¹ØÅäÖÃÐÅÏ¢
+### ï¿½ï¿½2ï¿½ï¿½ï¿½Ï´ï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½
+1ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½OSSï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
 
  - ENDPOINT
- ![ÔÚÕâÀï²åÈëÍ¼Æ¬ÃèÊö](https://img-blog.csdnimg.cn/20190115101817950.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NvbmdTaXIwMDE=,size_16,color_FFFFFF,t_70)
-  - ACCESSKEYIDºÍACCESSKEYSECRETÉÏÎÄÖÐÒÑÌáµ½ÈçºÎ»ñÈ¡
+ ![ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½](https://img-blog.csdnimg.cn/20190115101817950.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NvbmdTaXIwMDE=,size_16,color_FFFFFF,t_70)
+  - ACCESSKEYIDï¿½ï¿½ACCESSKEYSECRETï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½áµ½ï¿½ï¿½Î»ï¿½È¡
   - BUCKETNAME
   - KEY
-  Ïàµ±ÓÚÐèÒªÉÏ´«µÄÍ¼Æ¬µÄÄ¿Â¼
+  ï¿½àµ±ï¿½ï¿½ï¿½ï¿½Òªï¿½Ï´ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½Ä¿Â¼
   
-  ÆäÖÐÎÒµÄÅäÖÃÈçÏÂ£º
+  ï¿½ï¿½ï¿½ï¿½ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â£ï¿½
   
 
 ```
@@ -189,14 +189,14 @@ public static String ACCESSKEYSECRET = "3QCJw4MhlyZC8zQUATKaLxWZpk4bFY";
 public static String BUCKETNAME = "songsiraliyun";
 public static String KEY = "images/";
 ```
-2£©Ïà¹Ø´úÂë
+2ï¿½ï¿½ï¿½ï¿½Ø´ï¿½ï¿½ï¿½
 
 ```
 	/**
      * @param request
      * @MethodName myphotoupload
-     * @Description Í¼Æ¬ÉÏ´«
-     * @Auther SongYapeng
+     * @Description Í¼Æ¬ï¿½Ï´ï¿½
+     * @Author SongYapeng
      * @Date 2019/1/15 9:16
      * @Since JDK 1.8
      */
@@ -207,7 +207,7 @@ public static String KEY = "images/";
         String key = "";
         String fileNames = "";
         ret.put("success", false);
-        ret.put("msg", "ÇëÇóÊ§°Ü[PU01]");
+        ret.put("msg", "ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿½[PU01]");
         try {
             StandardMultipartHttpServletRequest req = (StandardMultipartHttpServletRequest) request;
             Iterator<String> iterator = req.getFileNames();
@@ -216,15 +216,15 @@ public static String KEY = "images/";
                 fileNames = file.getOriginalFilename();
                 InputStream input = file.getInputStream();
 
-                // ´´½¨OSSClientÊµÀý
+                // ï¿½ï¿½ï¿½ï¿½OSSClientÊµï¿½ï¿½
                 OSSClient ossClient = new OSSClient(ENDPOINT, ACCESSKEYID, ACCESSKEYSECRET);
-                // ÉÏ´«ÎÄ¼þÁ÷
+                // ï¿½Ï´ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½
                 ossClient.putObject(BUCKETNAME, KEY + fileNames, input);
                 ossClient.shutdown();
             }
             ret.put("success", true);
             ret.put("msg", key + fileNames);
-            System.out.println(("Í¼Æ¬ÉÏ´«°¢ÀïÔÆ name=" + key + fileNames));
+            System.out.println(("Í¼Æ¬ï¿½Ï´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ name=" + key + fileNames));
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -232,5 +232,5 @@ public static String KEY = "images/";
         return ret.getString("msg");
     }
 ```
-# Èý¡¢ÏîÄ¿´úÂë²Î¿¼
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½Î¿ï¿½
 [https://github.com/songsir01/songsir-demoboot.git](https://github.com/songsir01/songsir-demoboot.git)

@@ -5,7 +5,7 @@ import com.songsir.service.ICalculator;
 /**
  * @PackageName com.songsir.service.impl
  * @ProjectName songsir-demoboot
- * @Auther: SongYapeng
+ * @Author: SongYapeng
  * @Date: Create in 16:20 2019/4/16
  * @Description:
  * @Copyright Copyright (c) 2019, songyapeng@shopin.cn All Rights Reserved.

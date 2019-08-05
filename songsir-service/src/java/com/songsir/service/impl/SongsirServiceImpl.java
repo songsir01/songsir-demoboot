@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 /**
  * @PackageName com.songsir.service.impl
  * @ProjectName songsir-demoboot
- * @Auther: SongYapeng
+ * @Author: SongYapeng
  * @Date: Create in 16:38 2018/11/28
  * @Description:
  * @Copyright Copyright (c) 2018, songyapeng@shopin.cn All Rights Reserved.

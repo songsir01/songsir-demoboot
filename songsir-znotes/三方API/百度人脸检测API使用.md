@@ -1,29 +1,29 @@
 [toc]
-# Ò»¡¢ÕËºÅÉêÇëÅäÖÃ
-## 1¡¢ÕËºÅÉêÇëºÍÅäÖÃ
-1¡¢Èç¹ûÃ»ÓÐ°Ù¶ÈÕËºÅ£¬È¥°Ù¶ÈÉêÇëÒ»¸ö¡£ÓÐµÄ»°£¬´ò¿ª°Ù¶ÈAI¿ª·ÅÆ½Ì¨
-[°Ù¶ÈAI¿ª·ÅÆ½Ì¨](http://ai.baidu.com/)
-2¡¢Êó±êÒÆ¶¯µ½¿ØÖÆÌ¨£¬Ñ¡ÔñÈËÁ³Ê¶±ð
-![ÔÚÕâÀï²åÈëÍ¼Æ¬ÃèÊö](https://img-blog.csdnimg.cn/20190117143737389.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NvbmdTaXIwMDE=,size_16,color_FFFFFF,t_70)
-3¡¢µÇÂ¼ºó£¬¸Å¿öÀïÃæ´´½¨Ó¦ÓÃ
-![ÔÚÕâÀï²åÈëÍ¼Æ¬ÃèÊö](https://img-blog.csdnimg.cn/20190117143910211.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NvbmdTaXIwMDE=,size_16,color_FFFFFF,t_70)
-4¡¢´´½¨Íê£¬²é¿´Ó¦ÓÃÏêÇé£¬±£´æºÃAPI Key
-ºÍSecret KeyºóÐøÊ¹ÓÃ
+# Ò»ï¿½ï¿½ï¿½Ëºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+## 1ï¿½ï¿½ï¿½Ëºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+1ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½Ð°Ù¶ï¿½ï¿½ËºÅ£ï¿½È¥ï¿½Ù¶ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ÐµÄ»ï¿½ï¿½ï¿½ï¿½ò¿ª°Ù¶ï¿½AIï¿½ï¿½ï¿½ï¿½Æ½Ì¨
+[ï¿½Ù¶ï¿½AIï¿½ï¿½ï¿½ï¿½Æ½Ì¨](http://ai.baidu.com/)
+2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¨ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¶ï¿½ï¿½
+![ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½](https://img-blog.csdnimg.cn/20190117143737389.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NvbmdTaXIwMDE=,size_16,color_FFFFFF,t_70)
+3ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ó£¬¸Å¿ï¿½ï¿½ï¿½ï¿½æ´´ï¿½ï¿½Ó¦ï¿½ï¿½
+![ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½](https://img-blog.csdnimg.cn/20190117143910211.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NvbmdTaXIwMDE=,size_16,color_FFFFFF,t_70)
+4ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ê£¬ï¿½é¿´Ó¦ï¿½ï¿½ï¿½ï¿½ï¿½é£¬ï¿½ï¿½ï¿½ï¿½ï¿½API Key
+ï¿½ï¿½Secret Keyï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½
 
-# ¶þ¡¢ºóÌ¨API¶Ô½Ó
-## 1¡¢ÏîÄ¿×¼±¸
- - ±¾°¸ÀýÊ¹ÓÃSpringBootÏîÄ¿£¬²¢ÔÚÉÏÒ»ÆªÊµÏÖÍ¼Æ¬ÉÏ´«µ½°¢ÀïÔÆ
- - ²Î¿¼²©¿Í[SpringBootÉÏ´«Í¼Æ¬µ½°¢ÀïÔÆ](https://blog.csdn.net/SongSir001/article/details/86311137)
- - ÔÚÉÏÆª²©¿ÍµÄ»ù´¡ÉÏ¿ª·¢
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¨APIï¿½Ô½ï¿½
+## 1ï¿½ï¿½ï¿½ï¿½Ä¿×¼ï¿½ï¿½
+ - ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½SpringBootï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ÆªÊµï¿½ï¿½Í¼Æ¬ï¿½Ï´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ - ï¿½Î¿ï¿½ï¿½ï¿½ï¿½ï¿½[SpringBootï¿½Ï´ï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½](https://blog.csdn.net/SongSir001/article/details/86311137)
+ - ï¿½ï¿½ï¿½ï¿½Æªï¿½ï¿½ï¿½ÍµÄ»ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½
 
-## 2¡¢¹¤¾ßÀàÏÂÔØ
+## 2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  - [FileUtil](https://ai.baidu.com/file/658A35ABAB2D404FBF903F64D47C1F72)
  - [Base64Util](https://ai.baidu.com/file/C8D81F3301E24D2892968F09AE1AD6E2)
  - [HttpUtil](https://ai.baidu.com/file/544D677F5D4E4F17B4122FBD60DB82B3)
  - [GsonUtil](https://ai.baidu.com/file/470B3ACCA3FE43788B5A963BF0B625F3)
 
-## 3¡¢ÐÂ½¨¹¤¾ßÀà»ñÈ¡token
-´Ë´¦ÓÃµ½ÉÏÃæ»ñÈ¡µ½µÄAPI KeyºÍSecret Key£¬´úÂëÈçÏÂ£º
+## 3ï¿½ï¿½ï¿½Â½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡token
+ï¿½Ë´ï¿½ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½API Keyï¿½ï¿½Secret Keyï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â£ï¿½
 
 ```
 package com.songsir.util;
@@ -38,23 +38,23 @@ import java.util.Map;
 /**
  * @PackageName com.songsir.util
  * @ProjectName songsir-demoboot
- * @Auther: SongYapeng
+ * @Author: SongYapeng
  * @Date: Create in 16:03 2019/1/16
  * @Description:
  * @Copyright Copyright (c) 2018, songyapeng@shopin.cn All Rights Reserved.
  */
 public class BaiduFaceUtil {
-    // ¹ÙÍø»ñÈ¡µÄ API Key
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ API Key
     private static final String APIKEY = "jMr8yvzUbpB8YKCHLSiz7qAO";
-    // ¹ÙÍø»ñÈ¡µÄ Secret
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ Secret
     private static final String APISCRET = "SROB4zQvciWKNcEpwsQTtEXogSTZPl7Y";
-    // »ñÈ¡tokenµØÖ·
+    // ï¿½ï¿½È¡tokenï¿½ï¿½Ö·
     private static final String AUTHHOST = "https://aip.baidubce.com/oauth/2.0/token?";
     /**
      * @param
      * @MethodName getAuth
-     * @Description »ñÈ¡token
-     * @Auther SongYapeng
+     * @Description ï¿½ï¿½È¡token
+     * @Author SongYapeng
      * @Date 2019/1/16 16:04
      * @Since JDK 1.8
      */
@@ -65,25 +65,25 @@ public class BaiduFaceUtil {
     }
     private static String getAuth(String ak, String sk) {
         String getAccessTokenUrl = AUTHHOST
-                // 1. grant_typeÎª¹Ì¶¨²ÎÊý
+                // 1. grant_typeÎªï¿½Ì¶ï¿½ï¿½ï¿½ï¿½ï¿½
                 + "grant_type=client_credentials"
-                // 2. ¹ÙÍø»ñÈ¡µÄ API Key
+                // 2. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ API Key
                 + "&client_id=" + ak
-                // 3. ¹ÙÍø»ñÈ¡µÄ Secret Key
+                // 3. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ Secret Key
                 + "&client_secret=" + sk;
         try {
             URL realUrl = new URL(getAccessTokenUrl);
-            // ´ò¿ªºÍURLÖ®¼äµÄÁ¬½Ó
+            // ï¿½ò¿ªºï¿½URLÖ®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
             HttpURLConnection connection = (HttpURLConnection) realUrl.openConnection();
             connection.setRequestMethod("GET");
             connection.connect();
-            // »ñÈ¡ËùÓÐÏìÓ¦Í·×Ö¶Î
+            // ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦Í·ï¿½Ö¶ï¿½
             Map<String, List<String>> map = connection.getHeaderFields();
-            // ±éÀúËùÓÐµÄÏìÓ¦Í·×Ö¶Î
+            // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½Ó¦Í·ï¿½Ö¶ï¿½
             for (String key : map.keySet()) {
                 System.err.println(key + "--->" + map.get(key));
             }
-            // ¶¨Òå BufferedReaderÊäÈëÁ÷À´¶ÁÈ¡URLµÄÏìÓ¦
+            // ï¿½ï¿½ï¿½ï¿½ BufferedReaderï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡URLï¿½ï¿½ï¿½ï¿½Ó¦
             BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             String result = "";
             String line;
@@ -95,19 +95,19 @@ public class BaiduFaceUtil {
             String access_token = jsonObject.getString("access_token");
             return access_token;
         } catch (Exception e) {
-            System.err.printf("»ñÈ¡tokenÊ§°Ü£¡");
+            System.err.printf("ï¿½ï¿½È¡tokenÊ§ï¿½Ü£ï¿½");
             e.printStackTrace(System.err);
         }
         return null;
     }
 }
 ```
-## 4¡¢ÈËÁ³¼ì²â·½·¨
+## 4ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â·½ï¿½ï¿½
 
 ```
 public JSONObject faceReact(InputStream input, JSONObject ret) {
         try {
-            // ÒÔÏÂ´úÂë½«ÎÄ¼þÁ÷×ªÎªbase64
+            // ï¿½ï¿½ï¿½Â´ï¿½ï¿½ë½«ï¿½Ä¼ï¿½ï¿½ï¿½×ªÎªbase64
             ByteArrayOutputStream outStream = new ByteArrayOutputStream();
             byte[] buffer = new byte[1024];
             int len = 0;
@@ -117,13 +117,13 @@ public JSONObject faceReact(InputStream input, JSONObject ret) {
             byte[] data = outStream.toByteArray();
             String imageEncode = Base64Util.encode(data);
             Map<String, Object> map = new HashMap<>();
-            // Í¼Æ¬µÄbase64Öµ
+            // Í¼Æ¬ï¿½ï¿½base64Öµ
             map.put("image", imageEncode);
-            // ²âÊÔÀàÐÍ£¬´Ë´¦Ö»¼ì²âÈËÁ³ ÄêÁä¡¢ÑÕÖµÆÀ·ÖºÍÐÔ±ð
+            // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½Ë´ï¿½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ä¡¢ï¿½ï¿½Öµï¿½ï¿½ï¿½Öºï¿½ï¿½Ô±ï¿½
             map.put("face_field", "age,beauty,gender");
             map.put("image_type", "BASE64");
             String param = GsonUtils.toJson(map);
-            // »ñÈ¡token
+            // ï¿½ï¿½È¡token
             String accessToken = BaiduFaceUtil.getAuth();
             String result = HttpUtil.post(DERECTURL, accessToken, "application/json", param);
             JSONObject faceResult = JSONObject.parseObject(result);
@@ -145,13 +145,13 @@ public JSONObject faceReact(InputStream input, JSONObject ret) {
         return ret;
     }
 ```
-# Èý¡¢ÈËÁ³¼ì²â²âÊÔ
-## 1¡¢Ò³Ãæ
-![ÔÚÕâÀï²åÈëÍ¼Æ¬ÃèÊö](https://img-blog.csdnimg.cn/20190117173145872.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NvbmdTaXIwMDE=,size_16,color_FFFFFF,t_70)
-## 2¡¢ÉÏ´«ÎÄ¼þ»ñÈ¡½á¹û
-![ÔÚÕâÀï²åÈëÍ¼Æ¬ÃèÊö](https://img-blog.csdnimg.cn/20190117173241798.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NvbmdTaXIwMDE=,size_16,color_FFFFFF,t_70)
-´ó²¿·ÖÃ÷ÐÇµÄ·ÖÊýÆß°ËÊ®ÒÔÉÏ¡£
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+## 1ï¿½ï¿½Ò³ï¿½ï¿½
+![ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½](https://img-blog.csdnimg.cn/20190117173145872.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NvbmdTaXIwMDE=,size_16,color_FFFFFF,t_70)
+## 2ï¿½ï¿½ï¿½Ï´ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½
+![ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½](https://img-blog.csdnimg.cn/20190117173241798.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NvbmdTaXIwMDE=,size_16,color_FFFFFF,t_70)
+ï¿½ó²¿·ï¿½ï¿½ï¿½ï¿½ÇµÄ·ï¿½ï¿½ï¿½ï¿½ß°ï¿½Ê®ï¿½ï¿½ï¿½Ï¡ï¿½
 
-# ËÄ¡¢´úÂë²Î¿¼
+# ï¿½Ä¡ï¿½ï¿½ï¿½ï¿½ï¿½Î¿ï¿½
 [songsir`s github](https://github.com/songsir01/songsir-demoboot.git)
-Çë¶àÖ¸½Ì
+ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½

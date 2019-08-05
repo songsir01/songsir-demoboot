@@ -59,9 +59,6 @@ public class LogConfig {
          * 打印cookie
          */
         logger.info("COOKIE：" + cookieInfo);
-        /**
-         * logger.info( "CLASS_METHOD ：" + joinPoint.getSignature().getDeclaringTypeName()+ "." + joinPoint.getSignature().getName());
-         */
         logger.info("URL : " + request.getRequestURL().toString() + " Http_Method : " + request.getMethod());
         /**
          * 获取所有参数方法一：

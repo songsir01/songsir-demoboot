@@ -3,7 +3,7 @@ package com.songsir.bean;
 /**
  * @PackageName com.songsir.bean
  * @ProjectName songsir-demoboot
- * @Auther: SongYapeng
+ * @Author: SongYapeng
  * @Date: Create in 16:15 2019/2/27
  * @Description:
  * @Copyright Copyright (c) 2019, songyapeng@shopin.cn All Rights Reserved.

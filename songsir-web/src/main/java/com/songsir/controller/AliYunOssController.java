@@ -26,7 +26,7 @@ import java.util.Map;
 /**
  * @PackageName com.songsir.controller
  * @ProjectName songsir-demoboot
- * @Auther: SongYapeng
+ * @Author: SongYapeng
  * @Date: Create in 9:15 2019/1/15
  * @Description:
  * @Copyright Copyright (c) 2018, songyapeng@shopin.cn All Rights Reserved.
@@ -39,9 +39,9 @@ public class AliYunOssController {
 
 
     public static String ENDPOINT = "http://oss-cn-beijing.aliyuncs.com";
-    public static String ACCESSKEYID = "LTAI9rV1x0TmtGjq";
-    public static String ACCESSKEYSECRET = "3QCJw4MhlyZC8zQUATKaLxWZpk4bFY";
-    public static String BUCKETNAME = "songsirimg";
+    public static String ACCESS_KEY_ID = "LTAI9rV1x0TmtGjq";
+    public static String ACCESS_KEY_SECRET = "3QCJw4MhlyZC8zQUATKaLxWZpk4bFY";
+    public static String BUCKET_NAME = "songsirimg";
     public static String KEY = "home/img/";
 
     private static final String DERECTURL = "https://aip.baidubce.com/rest/2.0/face/v3/detect";
@@ -51,7 +51,7 @@ public class AliYunOssController {
      * @param request
      * @MethodName myphotoupload
      * @Description 图片上传
-     * @Auther SongYapeng
+     * @Author SongYapeng
      * @Date 2019/1/15 9:16
      * @Since JDK 1.8
      */
@@ -77,20 +77,14 @@ public class AliYunOssController {
                 // 一下相当于复制文件流，一个供上传，另一个供人脸识别。但第一次读取InputStream对象后，第二次再读取时可能已经到Stream的结尾了（EOFException）或者Stream已经close掉了。
                 // 而InputStream对象本身不能复制，因为它没有实现Cloneable接口
                 ByteArrayOutputStream outStream = new ByteArrayOutputStream();
-                byte[] buffer = new byte[1024];
-                int len = 0;
-                while ((len = input.read(buffer)) != -1) {
-                    outStream.write(buffer, 0, len);
-                }
-                // 转化成byte[] 网络上都是 byte [] data = new byte[inputStream.available()];这种方法不可取
-                byte[] data = outStream.toByteArray();
+                byte[] data = getBytes(input, outStream);
                 InputStream streamForUpload = new ByteArrayInputStream(data);
                 InputStream streamForFaceReact = new ByteArrayInputStream(data);
 
                 // 创建OSSClient实例
-                OSSClient ossClient = new OSSClient(ENDPOINT, ACCESSKEYID, ACCESSKEYSECRET);
+                OSSClient ossClient = new OSSClient(ENDPOINT, ACCESS_KEY_ID, ACCESS_KEY_SECRET);
                 // 上传文件流
-                ossClient.putObject(BUCKETNAME, KEY + name, streamForUpload);
+                ossClient.putObject(BUCKET_NAME, KEY + name, streamForUpload);
 
                 ossClient.shutdown();
                 // 人脸识别
@@ -108,13 +102,23 @@ public class AliYunOssController {
         return ret.toString();
     }
 
+    private byte[] getBytes(InputStream input, ByteArrayOutputStream outStream) throws IOException {
+        byte[] buffer = new byte[1024];
+        int len = 0;
+        while ((len = input.read(buffer)) != -1) {
+            outStream.write(buffer, 0, len);
+        }
+        // 转化成byte[] 网络上都是 byte [] data = new byte[inputStream.available()];这种方法不可取
+        return outStream.toByteArray();
+    }
+
 
     /**
      * @param input
      * @param ret
      * @MethodName faceReact
      * @Description 百度人脸识别
-     * @Auther SongYapeng
+     * @Author SongYapeng
      * @Date 2019/1/17 10:12
      * @Since JDK 1.8
      */
@@ -122,12 +126,7 @@ public class AliYunOssController {
         try {
             // 以下代码将文件流转为base64
             ByteArrayOutputStream outStream = new ByteArrayOutputStream();
-            byte[] buffer = new byte[1024];
-            int len = 0;
-            while ((len = input.read(buffer)) != -1) {
-                outStream.write(buffer, 0, len);
-            }
-            byte[] data = outStream.toByteArray();
+            byte[] data = getBytes(input, outStream);
             String imageEncode = Base64Util.encode(data);
             Map<String, Object> map = new HashMap<>();
             // 图片的base64值
@@ -163,7 +162,7 @@ public class AliYunOssController {
      * @param
      * @MethodName toFace
      * @Description 到颜值测试页面
-     * @Auther SongYapeng
+     * @Author SongYapeng
      * @Date 2019/1/23 16:31
      * @Since JDK 1.8
      */
@@ -176,7 +175,7 @@ public class AliYunOssController {
      * @param request
      * @MethodName savaFaceInfo
      * @Description 颜值入库
-     * @Auther SongYapeng
+     * @Author SongYapeng
      * @Date 2019/1/23 16:31
      * @Since JDK 1.8
      */
@@ -205,7 +204,7 @@ public class AliYunOssController {
      * @param
      * @MethodName getFileName
      * @Description 图片名称生成
-     * @Auther SongYapeng
+     * @Author SongYapeng
      * @Date 2019/1/24 8:47
      * @Since JDK 1.8
      */

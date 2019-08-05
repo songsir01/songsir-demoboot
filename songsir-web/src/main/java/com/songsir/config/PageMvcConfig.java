@@ -8,13 +8,13 @@ import org.springframework.web.servlet.view.JstlView;
 /**
  * @PackageName com.songsir.config
  * @ProjectName songsir-demoboot
- * @Auther: SongYapeng
+ * @Author: SongYapeng
  * @Date: Create in 9:34 2019/1/15
  * @Description:
  * @Copyright Copyright (c) 2018, songyapeng@shopin.cn All Rights Reserved.
  */
 @Configuration
-public class PageMVCConfig {
+public class PageMvcConfig {
 
     @Bean
     public InternalResourceViewResolver setupViewResolver() {

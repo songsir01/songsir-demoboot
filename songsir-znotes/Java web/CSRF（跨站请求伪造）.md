@@ -68,7 +68,7 @@ public class RefererFilter implements Filter {
      * @param filterConfig
      * @MethodName init
      * @Description 获取过滤器需要放过的uri
-     * @Auther SongYapeng
+     * @Author SongYapeng
      * @Date 2019/8/2 13:42
      * @Since JDK 1.8
      */

@@ -36,7 +36,7 @@ public class FibonacciSequence {
     /**
      * @MethodName fibonacci
      * @Description 动态规划
-     * @Auther SongYapeng
+     * @Author SongYapeng
      * @Date 2019/5/16 18:02
      * @param n
      * @Since JDK 1.8       
@@ -56,7 +56,7 @@ public class FibonacciSequence {
     /**
      * @MethodName Fibonacci
      * @Description 空间复杂度 O(1)
-     * @Auther SongYapeng
+     * @Author SongYapeng
      * @Date 2019/5/16 18:05
      * @param n
      * @Since JDK 1.8
@@ -78,7 +78,7 @@ public class FibonacciSequence {
     /**
      * @MethodName fibonacci2
      * @Description 普通递归              
-     * @Auther SongYapeng
+     * @Author SongYapeng
      * @Date 2019/5/16 18:01
      * @param n
      * @Since JDK 1.8       
@@ -95,7 +95,7 @@ public class FibonacciSequence {
     /**
      * @MethodName lastFibonacci
      * @Description 尾递归
-     * @Auther SongYapeng
+     * @Author SongYapeng
      * @Date 2019/5/16 18:07
      * @param n
      * @param ret1

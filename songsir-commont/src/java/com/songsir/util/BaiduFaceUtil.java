@@ -12,7 +12,7 @@ import java.util.Map;
 /**
  * @PackageName com.songsir.util
  * @ProjectName songsir-demoboot
- * @Auther: SongYapeng
+ * @Author: SongYapeng
  * @Date: Create in 16:03 2019/1/16
  * @Description:
  * @Copyright Copyright (c) 2018, songyapeng@shopin.cn All Rights Reserved.
@@ -30,7 +30,7 @@ public class BaiduFaceUtil {
      * @param
      * @MethodName getAuth
      * @Description 获取token
-     * @Auther SongYapeng
+     * @Author SongYapeng
      * @Date 2019/1/16 16:04
      * @Since JDK 1.8
      */

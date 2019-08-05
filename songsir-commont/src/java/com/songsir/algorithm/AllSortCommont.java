@@ -5,7 +5,7 @@ import static com.songsir.algorithm.AllSortCommont.*;
 /**
  * @PackageName com.songsir.algorithm
  * @ProjectName songsir-demoboot
- * @Auther: SongYapeng
+ * @Author: SongYapeng
  * @Date: Create in 14:09 2019/6/10
  * @Description:
  * @Copyright Copyright (c) 2019, songyapeng@shopin.cn All Rights Reserved.
@@ -30,7 +30,7 @@ public class AllSortCommont {
      * @param data
      * @MethodName printData
      * @Description 数据输出，中间使用...代替
-     * @Auther SongYapeng
+     * @Author SongYapeng
      * @Date 2019/6/10 14:12
      * @Since JDK 1.8
      */
@@ -52,7 +52,7 @@ public class AllSortCommont {
      * @param times
      * @MethodName getSorttimesAndSize
      * @Description 定义排序的分组数
-     * @Auther SongYapeng
+     * @Author SongYapeng
      * @Date 2019/6/10 14:14
      * @Since JDK 1.8
      */
@@ -68,7 +68,7 @@ public class AllSortCommont {
      * @param data
      * @MethodName printSortData
      * @Description 排序后输出
-     * @Auther SongYapeng
+     * @Author SongYapeng
      * @Date 2019/6/10 14:19
      * @Since JDK 1.8
      */
@@ -82,7 +82,7 @@ public class AllSortCommont {
 /**
  * @PackageName com.songsir.algorithm
  * @ProjectName songsir-demoboot
- * @Auther: SongYapeng
+ * @Author: SongYapeng
  * @Date: Create in 14:09 2019/6/28
  * @Description: 冒泡排序
  * @Copyright Copyright (c) 2019, songyapeng@shopin.cn All Rights Reserved.
@@ -105,7 +105,7 @@ class BubbleSort {
      * @param data
      * @MethodName bubbleSort
      * @Description 冒泡排序
-     * @Auther SongYapeng
+     * @Author SongYapeng
      * @Date 2019/6/10 14:20
      * @Since JDK 1.8
      */
@@ -128,7 +128,7 @@ class BubbleSort {
 /**
  * @PackageName com.songsir.algorithm
  * @ProjectName songsir-demoboot
- * @Auther: SongYapeng
+ * @Author: SongYapeng
  * @Date: Create in 14:09 2019/6/28
  * @Description: 快速排序
  * @Copyright Copyright (c) 2019, songyapeng@shopin.cn All Rights Reserved.
@@ -181,7 +181,7 @@ class QuickSort {
 /**
  * @PackageName com.songsir.algorithm
  * @ProjectName songsir-demoboot
- * @Auther: SongYapeng
+ * @Author: SongYapeng
  * @Date: Create in 14:09 2019/6/28
  * @Description: 选择排序
  * @Copyright Copyright (c) 2019, songyapeng@shopin.cn All Rights Reserved.
@@ -227,7 +227,7 @@ class SelectSort {
 /**
  * @PackageName com.songsir.algorithm
  * @ProjectName songsir-demoboot
- * @Auther: SongYapeng
+ * @Author: SongYapeng
  * @Date: Create in 14:09 2019/7/3
  * @Description: 插入排序
  * @Copyright Copyright (c) 2019, songyapeng@shopin.cn All Rights Reserved.
@@ -251,7 +251,7 @@ class InsertSort {
      * @param data
      * @MethodName insertSort
      * @Description 插入排序
-     * @Auther SongYapeng
+     * @Author SongYapeng
      * @Date 2019/7/3 17:28
      * @Since JDK 1.8
      */
@@ -275,7 +275,7 @@ class InsertSort {
 /**
  * @PackageName com.songsir.algorithm
  * @ProjectName songsir-demoboot
- * @Auther: SongYapeng
+ * @Author: SongYapeng
  * @Date: Create in 14:09 2019/7/5
  * @Description: 希尔排序
  * @Copyright Copyright (c) 2019, songyapeng@shopin.cn All Rights Reserved.

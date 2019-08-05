@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * @PackageName com.songsir.controller
  * @ProjectName songsir-demoboot
- * @Auther: SongYapeng
+ * @Author: SongYapeng
  * @Date: Create in 16:07 2018/11/28
  * @Description:
  * @Copyright Copyright (c) 2018, songyapeng@shopin.cn All Rights Reserved.
