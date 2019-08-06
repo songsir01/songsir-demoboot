@@ -31,51 +31,55 @@ public class LogConfig {
 
     ThreadLocal<Long> startTime = new ThreadLocal<Long>();
 
-    @Pointcut("execution(* com.songsir.*..*Controller.*(..)) || execution(* com.songsir.*..*Schedule*.*(..))")
+    @Pointcut("execution(* com.songsir.*..*Controller.*(..)) || execution(* com.songsir.*..*Job*.*(..))")
     public void webLog() {
     }
 
     @Before("webLog()")
-    public void doBefore(JoinPoint joinPoint) {
+    public void doBefore() {
         logger.info("\r\n----------方法开始----------");
-        startTime.set(System.currentTimeMillis());
+        try {
+            startTime.set(System.currentTimeMillis());
 
-        /**
-         * 接收到请求，记录请求内容
-         */
-        ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
-        HttpServletRequest request = attributes.getRequest();
+            /**
+             * 接收到请求，记录请求内容
+             */
+            ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
+            HttpServletRequest request = attributes.getRequest();
 
-        String userAgent = request.getHeader("User-Agent");
+            String userAgent = request.getHeader("User-Agent");
 
-        Cookie cookies[] = request.getCookies();
-        String cookieInfo = getCookieInfo(cookies);
-        String ip = getClientIpAddress(request);
-        /**
-         * 记录下请求内容
-         */
-        logger.info("User-Agent : " + userAgent + "; IP ：" + ip);
-        /**
-         * 打印cookie
-         */
-        logger.info("COOKIE：" + cookieInfo);
-        logger.info("URL : " + request.getRequestURL().toString() + " Http_Method : " + request.getMethod());
-        /**
-         * 获取所有参数方法一：
-         */
-        Enumeration<String> enu = request.getParameterNames();
-        if (enu.hasMoreElements()) {
-            StringBuffer params = new StringBuffer();
-            while (enu.hasMoreElements()) {
-                String paraName = enu.nextElement();
-                params.append(paraName + ": " + request.getParameter(paraName) + " ");
+            Cookie cookies[] = request.getCookies();
+            String cookieInfo = getCookieInfo(cookies);
+            String ip = getClientIpAddress(request);
+            /**
+             * 记录下请求内容
+             */
+            logger.info("User-Agent : " + userAgent + "; IP ：" + ip);
+            /**
+             * 打印cookie
+             */
+            logger.info("COOKIE：" + cookieInfo);
+            logger.info("URL : " + request.getRequestURL().toString() + " Http_Method : " + request.getMethod());
+            /**
+             * 获取所有参数方法一：
+             */
+            Enumeration<String> enu = request.getParameterNames();
+            if (enu.hasMoreElements()) {
+                StringBuffer params = new StringBuffer();
+                while (enu.hasMoreElements()) {
+                    String paraName = enu.nextElement();
+                    params.append(paraName + ": " + request.getParameter(paraName) + " ");
+                }
+                logger.info("Params : " + params.toString());
             }
-            logger.info("Params : " + params.toString());
+        } catch (Exception e) {
+            logger.error("该方法打印日志异常：" + e);
         }
     }
 
     @AfterReturning("webLog()")
-    public void doAfterReturning(JoinPoint joinPoint) {
+    public void doAfterReturning() {
         /**
          * 处理完请求，返回内容
          */
