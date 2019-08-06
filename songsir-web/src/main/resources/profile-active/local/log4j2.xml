@@ -62,6 +62,9 @@
         <logger name="com.songsir.dao.mapper" level="debug" additivity="false">
             <appender-ref ref="Console"/>
         </logger>
+        <logger name="com.songsir.dao.mapper2" level="debug" additivity="false">
+            <appender-ref ref="Console"/>
+        </logger>
 
         <Root level="INFO">
             <AppenderRef ref="Console"/>
