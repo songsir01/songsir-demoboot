@@ -33,6 +33,6 @@ public class SongsirApplication extends SpringBootServletInitializer implements 
 
     @Override
     public void run(String... args) {
-        System.out.println("启动完成！");
+        System.out.println("SpringBoot is Running...");
     }
 }
