@@ -19,15 +19,15 @@ public class MyTest {
 
     public static void main(String[] args) {
 
-        String a[] = {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z",
-        "A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","0","1","2","3",
-        "4","5","6","7","8","9"};
+        String a[] = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
+                "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "0", "1", "2", "3",
+                "4", "5", "6", "7", "8", "9"};
 
         long start = System.currentTimeMillis();
 
         StringBuffer sbStr = new StringBuffer();
-        for (int j = 0; j < 10000; j ++) {
-            for (int i = 0; i < a.length; i ++) {
+        for (int j = 0; j < 10000; j++) {
+            for (int i = 0; i < a.length; i++) {
                 double random = Math.random() * a.length;
                 int floor = (int) Math.floor(random);
                 sbStr.append(a[floor]);
@@ -39,8 +39,8 @@ public class MyTest {
         long start2 = System.currentTimeMillis();
 
         String str = "";
-        for (int j = 0; j < 10000; j ++) {
-            for (int i = 0; i < a.length; i ++) {
+        for (int j = 0; j < 10000; j++) {
+            for (int i = 0; i < a.length; i++) {
                 double random = Math.random() * a.length;
                 int floor = (int) Math.floor(random);
                 str += a[floor];
@@ -64,11 +64,12 @@ public class MyTest {
     @Test
     public void test2() {
         int a = 6;
-        for (int i = 0; i < 3; i ++) {
+        for (int i = 0; i < 3; i++) {
             System.out.print(a);
         }
     }
 }
+
 class Cc {
     public static void main(String[] args) {
         BigDecimal detailFtq = new BigDecimal("10");
@@ -99,14 +100,14 @@ class Dc {
         String ss = "T1010100";
         String startWord = ss.substring(0, 1);
         String lastWord = ss.substring(1, ss.length());
-        System.out.println((byte)startWord.toCharArray()[0] + "" + lastWord);
+        System.out.println((byte) startWord.toCharArray()[0] + "" + lastWord);
     }
 }
 
 class Ee {
     public static void main(String[] args) {
-        for(int i = 0 ;i < 2000; i ++) {
-            System.out.println(i + " " + (char)i);
+        for (int i = 0; i < 2000; i++) {
+            System.out.println(i + " " + (char) i);
         }
     }
 }
@@ -117,6 +118,23 @@ class TestLomBok {
         LombokBean lombokBean = new LombokBean();
         lombokBean.setId(123);
         System.out.println(lombokBean.toString());
+    }
+}
+
+class TestYunsuan {
+    public static void main(String[] args) {
+        long startTime = System.currentTimeMillis();
+        long endTime = startTime + 6000;
+        long i = 0;
+        while (true) {
+            Math.sqrt(i);
+            long now = System.currentTimeMillis();
+            if (now > endTime) {
+                break;
+            }
+            i++;
+        }
+        System.out.println("在6秒内运算了 " + i + " 次");
     }
 }
 
