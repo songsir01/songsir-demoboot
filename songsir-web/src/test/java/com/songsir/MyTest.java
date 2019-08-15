@@ -3,6 +3,7 @@ package com.songsir;
 import com.alibaba.fastjson.JSON;
 import com.songsir.bean.LombokBean;
 import com.songsir.bean.TBean;
+import org.apache.commons.lang.StringEscapeUtils;
 import org.junit.Test;
 
 import java.math.BigDecimal;
@@ -138,3 +139,25 @@ class TestYunsuan {
     }
 }
 
+class Ma {
+    public static void main(String[] args) {
+        char c = (char) (int) Integer.valueOf("36864");
+        System.out.println(c);
+    }
+}
+
+
+
+class Maam {
+    public static void main(String[] args) {
+        String s = StringEscapeUtils.escapeHtml(">");
+        String s1 = StringEscapeUtils.unescapeHtml("&apos;");
+        System.out.println(s);
+        System.out.println(s1);
+
+        String a = "songyapeng";
+        String s2 = a.replaceAll("ya", "AA");
+        System.out.println(s2);
+
+    }
+}
