@@ -30,6 +30,8 @@ public class TestController {
 
     private static BlockingQueue<Runnable> queueToUse = new LinkedBlockingQueue<>(120);
 
+    private static ExecutorService threadPool;
+
     @RequestMapping("/testRedis")
     public void testRedis() {
         boolean set = redisTemplate.set("A", "A", 10);
@@ -50,11 +52,15 @@ public class TestController {
      */
     @RequestMapping("/testThreadPool")
     public String testThreadPool() {
-
-        ExecutorService threadPool = ThreadPoolUtils.creatExeutorService(10, "testThreadPool",queueToUse);
+        if (threadPool == null) {
+            threadPool = ThreadPoolUtils.creatExeutorService(10, "testThreadPool",queueToUse);
+        }
         try {
-            Runnable takeQue = queueToUse.take();
-            threadPool.execute(takeQue);
+            if (!queueToUse.isEmpty()) {
+                Runnable takeQue = queueToUse.take();
+                threadPool.execute(takeQue);
+            }
+            threadPool.execute(new Thread());
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
