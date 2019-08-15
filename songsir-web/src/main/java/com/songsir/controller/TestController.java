@@ -1,11 +1,16 @@
 package com.songsir.controller;
 
 import com.songsir.util.MyRedisTemplate;
+import com.songsir.util.ThreadPoolUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.LinkedBlockingQueue;
 
 /**
  * @PackageName com.songsir.controller
@@ -23,6 +28,8 @@ public class TestController {
 
     private static Logger logger = LoggerFactory.getLogger(TestController.class);
 
+    private static BlockingQueue<Runnable> queueToUse = new LinkedBlockingQueue<>(120);
+
     @RequestMapping("/testRedis")
     public void testRedis() {
         boolean set = redisTemplate.set("A", "A", 10);
@@ -31,5 +38,47 @@ public class TestController {
         logger.info("获取redis：" + a);
         boolean a1 = redisTemplate.delete("A");
         logger.info("删除：" + a1);
+    }
+
+    /**
+     * @MethodName testThreadPool
+     * @Description 初始化线程池
+     * @Author SongYapeng
+     * @Date 2019/8/15 16:20
+     * @param
+     * @Since JDK 1.8
+     */
+    @RequestMapping("/testThreadPool")
+    public String testThreadPool() {
+
+        ExecutorService threadPool = ThreadPoolUtils.creatExeutorService(10, "testThreadPool",queueToUse);
+        try {
+            Runnable takeQue = queueToUse.take();
+            threadPool.execute(takeQue);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return "";
+    }
+
+    /**
+     * @MethodName testAddQue
+     * @Description 测试增加队列
+     * @Author SongYapeng
+     * @Date 2019/8/15 16:20
+     * @param
+     * @Since JDK 1.8
+     */
+    @RequestMapping("/testAddQue")
+    public String testAddQue() {
+
+        for (int i = 0; i < 100; i++) {
+            int finalI = i;
+            Runnable runnable = () -> {
+                logger.info("test add que" + finalI);
+            };
+            queueToUse.add(runnable);
+        }
+        return "";
     }
 }

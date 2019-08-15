@@ -21,7 +21,7 @@ public class ThreadPoolUtils {
      * @Date 2019/8/6 17:19
      * @Since JDK 1.8
      */
-    private ExecutorService creatExeutorService(int poolSize, String method) {
+    public static ExecutorService creatExeutorService(int poolSize, String method, BlockingQueue<Runnable> queueToUse) {
         int coreSize = Runtime.getRuntime().availableProcessors();
         if (poolSize < coreSize) {
             coreSize = poolSize;
@@ -31,7 +31,6 @@ public class ThreadPoolUtils {
             t.setDaemon(true);
             return t;
         };
-        BlockingQueue<Runnable> queueToUse = new LinkedBlockingQueue<>(coreSize);
         final ThreadPoolExecutor executor = new ThreadPoolExecutor(coreSize, poolSize, 60, TimeUnit.SECONDS, queueToUse, threadFactory, new ThreadPoolExecutor.CallerRunsPolicy());
         return executor;
     }

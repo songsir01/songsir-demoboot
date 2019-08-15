@@ -25,7 +25,7 @@ public class SongsriTestJob {
 
     @Scheduled(cron = "${songsirTestJob}")
     public void work() {
-        logger.info("the task is running....");
+//        logger.info("the task is running....");
     }
 
 }
