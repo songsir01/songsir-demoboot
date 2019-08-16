@@ -1,5 +1,7 @@
 package com.songsir.util;
 
+import org.springframework.stereotype.Component;
+
 import java.util.concurrent.*;
 
 /**
@@ -10,7 +12,10 @@ import java.util.concurrent.*;
  * @Description:
  * @Copyright Copyright (c) 2019, songsir01@163.com All Rights Reserved.
  */
+@Component
 public class ThreadPoolUtils {
+
+    public static BlockingQueue<Runnable> queueToUse = new LinkedBlockingQueue<>(120);
 
     /**
      * @param poolSize
@@ -21,7 +26,7 @@ public class ThreadPoolUtils {
      * @Date 2019/8/6 17:19
      * @Since JDK 1.8
      */
-    public static ExecutorService creatExeutorService(int poolSize, String method, BlockingQueue<Runnable> queueToUse) {
+    public ExecutorService creatExeutorService(int poolSize, String method, BlockingQueue<Runnable> queueToUse) {
         int coreSize = Runtime.getRuntime().availableProcessors();
         if (poolSize < coreSize) {
             coreSize = poolSize;
