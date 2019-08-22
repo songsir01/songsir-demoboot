@@ -1,4 +1,4 @@
-package com.songsir.设计模式;
+package com.songsir.设计模式.单例模式;
 
 /**
  * @PackageName com.songsir.设计模式
