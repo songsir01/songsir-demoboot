@@ -1,7 +1,7 @@
-package com.songsir.设计模式.工厂模式.简单工厂;
+package com.songsir.design.factory.simplefactory;
 
 /**
- * @PackageName com.songsir.设计模式.工厂模式.简单工厂
+ * @PackageName com.songsir.design.factory.simplefactory
  * @ProjectName songsir-demoboot
  * @Author: SongYapeng
  * @Date: Create in 15:34 2019/8/22

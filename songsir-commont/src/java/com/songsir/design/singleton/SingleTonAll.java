@@ -1,7 +1,7 @@
-package com.songsir.设计模式.单例模式;
+package com.songsir.design.singleton;
 
 /**
- * @PackageName com.songsir.设计模式
+ * @PackageName com.songsir.design
  * @ProjectName songsir-demoboot
  * @Author: SongYapeng
  * @Date: Create in 9:23 2019/6/30
@@ -13,7 +13,7 @@ public class SingleTonAll {
 }
 
 /**
- * @PackageName com.songsir.设计模式
+ * @PackageName com.songsir.design
  * @ProjectName songsir-demoboot
  * @Author: SongYapeng
  * @Date: Create in 9:23 2019/6/30
@@ -38,7 +38,7 @@ class SingleTon1 {
 }
 
 /**
- * @PackageName com.songsir.设计模式
+ * @PackageName com.songsir.design
  * @ProjectName songsir-demoboot
  * @Author: SongYapeng
  * @Date: Create in 9:23 2019/6/30
@@ -63,7 +63,7 @@ class SingleTon2 {
 }
 
 /**
- * @PackageName com.songsir.设计模式
+ * @PackageName com.songsir.design
  * @ProjectName songsir-demoboot
  * @Author: SongYapeng
  * @Date: Create in 9:23 2019/6/30

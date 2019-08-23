@@ -1,9 +1,9 @@
-package com.songsir.设计模式.工厂模式.工厂方法;
+package com.songsir.design.factory.factorymethod;
 
-import com.songsir.设计模式.工厂模式.简单工厂.Car;
+import com.songsir.design.factory.simplefactory.Car;
 
 /**
- * @PackageName com.songsir.设计模式.工厂模式.工厂方法
+ * @PackageName com.songsir.design.factory.factorymethod
  * @ProjectName songsir-demoboot
  * @Author: SongYapeng
  * @Date: Create in 15:39 2019/8/22
