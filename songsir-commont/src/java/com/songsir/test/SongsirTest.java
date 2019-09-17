@@ -1,6 +1,11 @@
 package com.songsir.test;
 
+import com.songsir.util.FileUtil;
+import com.songsir.util.FileUtils;
 import org.apache.commons.lang.StringEscapeUtils;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @PackageName com.songsir.test
@@ -15,5 +20,22 @@ public class SongsirTest {
         String s = "&#35746;&#21333;&#21015;&#34920;";
         System.out.println(StringEscapeUtils.escapeHtml(s));
         System.out.println(StringEscapeUtils.unescapeHtml("&#35746;&#21333;&#21015;&#34920;"));
+    }
+}
+
+class TestFile {
+    public static void main(String[] args) {
+        String path = "C://Windows";
+        long l = System.currentTimeMillis();
+        List<String> allFiles = FileUtils.getAllFiles(path, "1");
+        System.out.println(allFiles.size());
+
+        System.out.println(System.currentTimeMillis() - l);
+
+        long l2 = System.currentTimeMillis();
+        List<String> list = new ArrayList<>();
+        FileUtils.getAllFileName(path, list);
+        System.out.println("size:" + list.size());
+        System.out.println("耗时" + (System.currentTimeMillis() - l2));
     }
 }

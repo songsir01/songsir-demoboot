@@ -4,6 +4,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * @PackageName com.songsir.util
@@ -66,6 +69,65 @@ public class FileUtils {
             if (outputStream != null) {
                 outputStream.close();
             }
+        }
+    }
+
+    /**
+     * @param path
+     * @param fileType 文件类型，0 = 文件夹 1 = 文件
+     * @MethodName getAllFiles
+     * @Description 讀取文件夹下的，不包括子文件夹内
+     * @Author SongYapeng
+     * @Date 2019/9/17 15:56
+     * @Since JDK 1.8
+     */
+    public static List<String> getAllFiles(String path, String fileType) {
+        List<String> fileList = new ArrayList<>();
+        File fileDic = new File(path);
+        File[] files = fileDic.listFiles();
+        for (File file : files) {
+            if ("1".equals(fileType)) {
+                if (file.isFile()) {
+                    fileList.add(file.toString());
+                }
+            }
+            if ("0".equals(fileType)) {
+                if (file.isDirectory()) {
+                    fileList.add(file.toString());
+                }
+            }
+        }
+        return fileList;
+    }
+
+    /**
+     * @param path
+     * @MethodName getFolderFiles
+     * @Description 递归获取所有包括子文件夹的文件
+     * @Author SongYapeng
+     * @Date 2019/9/17 16:11
+     * @Since JDK 1.8
+     */
+    public static void getAllFileName(String path, List<String> listFileName) {
+        try {
+            File file = new File(path);
+            File[] files = file.listFiles();
+            String[] names = file.list();
+            if (names != null) {
+                String[] completNames = new String[names.length];
+                for (int i = 0; i < names.length; i++) {
+                    completNames[i] = path + names[i];
+                }
+                listFileName.addAll(Arrays.asList(completNames));
+            }
+            for (File a : files) {
+                // 如果文件夹下有子文件夹，获取子文件夹下的所有文件全路径。
+                if (a.isDirectory()) {
+                    getAllFileName(a.getAbsolutePath() + "\\", listFileName);
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
