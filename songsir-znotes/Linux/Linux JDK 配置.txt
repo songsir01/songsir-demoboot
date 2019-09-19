@@ -1,0 +1,52 @@
+1、下载JDK ，我使用的是JDK8，下载链接：https://pan.baidu.com/s/1YJmaLFmDt8Qggn7RngaCsg   密码：ahdb
+
+如果公司内部，需要copy其他服务器到自己服务器,使用命令：
+
+scp 目标服务器用户@192.168.200.114:/home/目标服务器用户/software/jdk1.8.0_73.tar.gz ./  
+
+(可以理解为 scp 目标服务器地址:/文件地址   后面的./表示复制到当前文件夹
+
+比如：scp testuser@192.168.101.114:/home/testuser/software/jdk1.7.0_79.tar.gz ./)
+
+默认是端口号是22，如果是复制其他端口号下的文件 scp -P 6666 ~~~~~~
+
+或者直接使用 SSH可视化工具，CV操作。
+
+2、解压jdk
+
+tar -xzf jdk1.8.0_73.tar.gz
+解压并且重命名：
+
+tar -xzf jdk1.8.0_73.tar.gz -O > jdk8
+3、配置
+
+ 1） ROOT用户全局配置：
+
+vi /etc/profile
+里面添加：
+
+export JAVA_HOME=/home/java/jdk1.8.0_73
+export CLASSPATH=.:$JAVA_HOME/jre/lib/rt.jar:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+export PATH=$PATH:$JAVA_HOME/bin
+生效命令：
+
+source /etc/profile
+根据自己的jdk解压位置，灵活配置JAVA_HOME
+
+ 2） 当前非ROOT用户私有配置：
+
+cd /home/dev（用户名）
+到当前用户根目录
+
+vi .bash_profile
+然后添加：
+
+export JAVA_HOME=/home/java/jdk1.8.0_73
+export CLASSPATH=.:$JAVA_HOME/jre/lib/rt.jar:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+export PATH=$PATH:$JAVA_HOME/bin
+生效命令：
+
+source .bash_profile
+4、查看jdk版本
+
+java -version
