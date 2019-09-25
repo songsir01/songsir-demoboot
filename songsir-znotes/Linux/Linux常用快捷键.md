@@ -1,4 +1,4 @@
-[TOC]
+
 # 一、vi编辑器相关
 
  - 光标移动到句首：^
@@ -143,5 +143,29 @@ scp testuser@192.168.101.114:/home/testuser/software/jdk1.7.0_79.tar.gz ./
 ```
 ***在公司正式环境下这样操作*，就拜了个拜！**
 
+# 五、系统相关
+
+## 1、查看内存情况
+
+```
+[root@localhost ~]# free -m
+              total        used        free      shared  buff/cache   available
+Mem:            472          74         254           4         143         347
+Swap:          1023           0        1023
+```
+
+## 2.文件大小
+
+```
+[root@localhost ~]# df -h
+Filesystem           Size  Used Avail Use% Mounted on
+/dev/mapper/cl-root   18G  1.9G   17G  11% /
+devtmpfs             226M     0  226M   0% /dev
+tmpfs                237M     0  237M   0% /dev/shm
+tmpfs                237M  4.6M  232M   2% /run
+tmpfs                237M     0  237M   0% /sys/fs/cgroup
+/dev/sda1           1014M  139M  876M  14% /boot
+tmpfs                 48M     0   48M   0% /run/user/0
+```
 end...
 后续追加
