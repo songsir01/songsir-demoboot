@@ -1,4 +1,4 @@
-@[toc]
+
 # 一、Synchronize 和 Lock 介绍
    
    - Synchronize：Synchronize是Java的关键字，可以作用于方法、代码块上，JVM层次上的控制锁的获取和释放。可以视为一种悲观锁。
