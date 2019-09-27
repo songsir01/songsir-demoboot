@@ -1,0 +1,17 @@
+1、介绍项目
+2、HashMap底层介绍，扩容机制，上面回答上来后，为什么容量都是2的n次幂等
+3、简历上如果写到SpringCloud、zookeeper等，问CAP理论相关
+4、介绍一下JVM相关
+5、GC相关，垃圾回收器，垃圾回收算法等
+6、Linux命令相关
+7、Spring AOP应用场景
+8、如果有写SpringBoot，问一下SpringBoot优势等
+9、Spring、SpringMVC相关常用注解
+10、数据库优化、数据库锁
+11、多线程，线程池创建
+12、如果有写到，全文搜索ES、solr等
+13、如果有写到，kafka
+14.分布式Session
+15、Redis基本使用，没有问更深的
+16、CAS理论，考虑到上面的回答水平，这个还没问到
+17、平时遇到什么问题，怎么解决的
