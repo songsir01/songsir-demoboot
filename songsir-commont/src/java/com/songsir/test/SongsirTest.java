@@ -1,11 +1,11 @@
 package com.songsir.test;
 
-import com.songsir.util.FileUtil;
 import com.songsir.util.FileUtils;
 import org.apache.commons.lang.StringEscapeUtils;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 /**
  * @PackageName com.songsir.test
@@ -37,5 +37,27 @@ class TestFile {
         FileUtils.getAllFileName(path, list);
         System.out.println("size:" + list.size());
         System.out.println("耗时" + (System.currentTimeMillis() - l2));
+    }
+}
+
+class TestLocal {
+    public static void main(String[] args) {
+        String[] isoCountries = Locale.getISOCountries();
+        for (String isoCountry : isoCountries) {
+
+            System.out.println(isoCountry);
+        }
+
+        Locale aDefault = Locale.getDefault();
+        String country = aDefault.getCountry();
+        String language = aDefault.getLanguage();
+        String displayCountry = aDefault.getDisplayCountry();
+        String displayLanguage = aDefault.getDisplayLanguage();
+        String displayName = aDefault.getDisplayName();
+        System.out.println(country);
+        System.out.println(language);
+        System.out.println(displayCountry);
+        System.out.println(displayLanguage);
+        System.out.println(displayName);
     }
 }
