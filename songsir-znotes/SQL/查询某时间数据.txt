@@ -1,0 +1,24 @@
+数据库查询语句：查询某天 数据
+
+查询某一年 某一月 某一天的数据（可组合）
+select * fromymt where date_format(inDate,'%Y-%m-%d')='2016-10-10';
+ (inDate为表中列名)
+
+
+mysql查询一天，查询一周，查询一个月内的数据
+查询一天
+select * from ymt where DATE(inDate)=CURDATE();
+select * from ymt where to_days(inDate)=to_days(now());
+
+查询一周：
+select * from table where DATE_SUB(CURDATE(), INTERVAL 7 DAY) <= DATE(column_time);
+
+查询一个月：
+select * fromtable where DATE_SUB(CURDATE(), INTERVAL 1 MONTH) <= DATE(column_time);
+
+查询选择所有 date_col 值在最后 30 天内的记录。
+SELECT something FROM tbl_name
+            WHERE TO_DAYS(NOW()) -TO_DAYS(date_col) <= 30;
+
+DATE_ADD(date,INTERVALexpr type)
+DATE_SUB(date,INTERVALexpr type)
