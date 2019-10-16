@@ -30,3 +30,8 @@ private V putForNullKey(V value) {
    - threshold：size临界值，当size超过这个值时，触发扩容；
    - loadFactor：hashMap负载因子，容量所能使用的比例大小，hashMap默认值为0.75，也就是当键值对超过总容量的75%的时候会进行扩容。
    
+   
+# 三、get过程
+   - 首先根据key计算hash值
+   - 然后获取相应的数组下标，hash & （length - 1）
+   - 最后遍历相应数组位置的链表，直到找到相等的key
