@@ -7,10 +7,12 @@
    - 这时Eureka就登场了，上述每个服务都有一个Eureka Client组件，这个组件负责把该服务的信息注册到Eureka Server上。大概就是告诉Eureka Server自己的服务的IP、端口号等信息。
    - 比如当订单服务需要调用积分服务时，Eureka Client就会向Eureka Server询问一下积分的地址、端口号等信息，然后可以把注册表缓存到本地。这样获取到接口的具体信息，就可以直接通过接口方法调用服务了。
 
-# Ribbon
-
-
 # Feign
+
+   - 传统项目调用其他接口时需要HTTPClient构造各种请求报文、网络请求等等，但是SpringCloud Feign为我们提供了更为优雅的解决方案。
+   - 没有底层建立连接、解析等等一系列冗杂的代码，只需要使用注解定义一个FeignClient接口，然后直接调用那个接口就可以了。就像使用@Service注解，然后调用服务层方法时只需要将服务注入，然后就可以直接调用service方法。
+
+# Ribbon
 
 
 # Hystrix
