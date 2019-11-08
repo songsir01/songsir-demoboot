@@ -1,0 +1,1 @@
+CREATE INDEX idxtitle ON test_table (namee,xuehao,mingci);
