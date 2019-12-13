@@ -45,7 +45,7 @@
         <!-- dubbo版本 -->
         <dubbo.version>2.6.3</dubbo.version>
         <!-- zookeeper版本 -->
-        <zookeeper.version>3.4.10</zookeeper.version>
+        <zookeeper.version>3.4.14</zookeeper.version>
     </properties>
 
     <!-- 声明依赖不引入 -->
