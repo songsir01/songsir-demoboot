@@ -109,7 +109,7 @@
                 } else {
                     loading();
                     $.ajaxFileUpload({
-                        url: 'photoupload.html?memo=yanzhi',
+                        url: 'photoupload?memo=yanzhi',
                         secureuri: false,
                         fileElementId: 'updateImg',
                         dataType: 'text/html',
@@ -168,7 +168,7 @@
         function saveInfo(gender, age, beauty, imgSrc) {
             $.ajax({
                 type: "POST",
-                url: 'savaFaceInfo.html',
+                url: 'savaFaceInfo',
                 data: {
                     "sex": gender,
                     "age": age,
