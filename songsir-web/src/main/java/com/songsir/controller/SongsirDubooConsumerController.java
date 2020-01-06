@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class SongsirDubooConsumerController {
 
-    @Reference(check = false)
+//    @Reference(check = false)
     private DubboTestProviderService dubboTestProviderService;
 
     @ResponseBody
