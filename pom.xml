@@ -22,6 +22,7 @@
         <module>songsir-dao</module>
         <module>songsir-bean</module>
         <module>songsir-commont</module>
+        <module>songsir-highly-concurrent</module>
     </modules>
 
     <!-- 依赖版本统一管理 -->
