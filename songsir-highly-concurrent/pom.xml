@@ -11,5 +11,12 @@
 
     <artifactId>songsir-highly-concurrent</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.songsir</groupId>
+            <artifactId>songsir-commont</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>
