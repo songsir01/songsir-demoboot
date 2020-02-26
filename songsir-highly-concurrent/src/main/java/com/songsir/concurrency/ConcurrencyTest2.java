@@ -6,23 +6,24 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Semaphore;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * @PackageName com.songsir.concurrency
  * @ProjectName songsir-demoboot
  * @Author: SongYapeng
  * @Date: Create in 20:36 2020/2/25
- * @Description: 不安全的计数
+ * @Description: 安全计数
  * @Copyright Copyright (c) 2019, songsir01@163.com All Rights Reserved.
  */
 @Slf4j
-public class ConcurrencyTest {
+public class ConcurrencyTest2 {
 
     public static int clientTotal = 5000;
 
     public static int threadTatal = 50;
 
-    public static int count = 0;
+    public static AtomicInteger count = new AtomicInteger(0);
 
     public static void main(String[] args) throws InterruptedException {
         ExecutorService executorService = Executors.newCachedThreadPool();
@@ -42,11 +43,11 @@ public class ConcurrencyTest {
         }
         countDownLatch.await();
         executorService.shutdown();
-        log.info("count: {}", count);
+        log.info("count: {}", count.get());
     }
 
     private static void add() {
-        count++;
+        count.incrementAndGet();
     }
 
 }
