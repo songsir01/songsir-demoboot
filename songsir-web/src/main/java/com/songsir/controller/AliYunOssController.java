@@ -39,8 +39,8 @@ public class AliYunOssController {
 
 
     public static String ENDPOINT = "http://oss-cn-beijing.aliyuncs.com";
-    public static String ACCESS_KEY_ID = "LTAI9rV1x0TmtGjq";
-    public static String ACCESS_KEY_SECRET = "3QCJw4MhlyZC8zQUATKaLxWZpk4bFY";
+    public static String ACCESS_KEY_ID = "";
+    public static String ACCESS_KEY_SECRET = "";
     public static String BUCKET_NAME = "songsirimg";
     public static String KEY = "home/img/";
 
