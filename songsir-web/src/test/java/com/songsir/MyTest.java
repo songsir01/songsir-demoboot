@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.songsir.bean.LombokBean;
 import com.songsir.bean.TBean;
 import org.apache.commons.lang.StringEscapeUtils;
+import org.apache.commons.lang.StringUtils;
 import org.junit.Test;
 
 import java.math.BigDecimal;
@@ -159,5 +160,16 @@ class Maam {
         String s2 = a.replaceAll("ya", "AA");
         System.out.println(s2);
 
+    }
+}
+
+class Testtest {
+    public static void main(String[] args) {
+        String a = "1234456789.jpg";
+        String s = StringUtils.substringAfter(a, ".");
+        System.out.println(s);
+
+        String s1 = StringUtils.stripEnd(a, ".jpg");
+        System.out.println(s1);
     }
 }
