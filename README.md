@@ -11,10 +11,11 @@
 ...
 
 # 三、znotes 一些笔记
-## 1、Spring事务配置和传播属性
-## 2、使用RedisTemplate
-## 3、Linux下tomcat日志自动化打包
-## 4、idea相关快捷键
-## 5、使用阿里云OSS
-## 6、百度人脸检测API的使用
+## 1、Java基础
+### (1) hashMap基本结构.md
+### (2) i++ 并发问题.md
+...
+## 2、Java Web
+### (1) CSRF（跨站请求伪造）.md
+### (2) Spring 多数据源配置.md
 ...
