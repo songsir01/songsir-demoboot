@@ -16,6 +16,8 @@
 ### (2) i++ 并发问题.md
 ### (3) i++ java IO.md
 ### (4) jstat使用.md
+### (5) Lock and Synchronize.md
+
 ...
 ## 2、Java Web
 ### (1) CSRF（跨站请求伪造）.md
