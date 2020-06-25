@@ -1,11 +1,14 @@
 package com.songsir.controller;
 
+import com.songsir.service.ITestFcService;
+import com.songsir.service.IServiceFactory;
 import com.songsir.util.MyRedisTemplate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import static com.songsir.util.ThreadPoolUtils.queueToUse;
 
@@ -56,5 +59,15 @@ public class TestController {
             queueToUse.add(runnable);
         }
         return "";
+    }
+
+    @Autowired
+    private IServiceFactory serviceFactory;
+
+    @ResponseBody
+    @RequestMapping("/testServiceFactory")
+    public String testServiceFactory() {
+        ITestFcService service = serviceFactory.getService("1");
+        return service.printHello();
     }
 }

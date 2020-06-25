@@ -1,6 +1,7 @@
 package com.songsir.concurrency;
 
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.concurrent.atomic.AtomicReference;
 
@@ -12,8 +13,9 @@ import java.util.concurrent.atomic.AtomicReference;
  * @Description: 安全计数
  * @Copyright Copyright (c) 2019, songsir01@163.com All Rights Reserved.
  */
-@Slf4j
 public class ConcurrencyTest4 {
+
+    private static final Logger log = LoggerFactory.getLogger(ConcurrencyTest4.class);
 
 
     private static AtomicReference<Integer> count = new AtomicReference<>(0);

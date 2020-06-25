@@ -1,6 +1,7 @@
 package com.songsir.concurrency;
 
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.concurrent.atomic.AtomicIntegerFieldUpdater;
 
@@ -12,8 +13,9 @@ import java.util.concurrent.atomic.AtomicIntegerFieldUpdater;
  * @Description:
  * @Copyright Copyright (c) 2019, songsir01@163.com All Rights Reserved.
  */
-@Slf4j
 public class ConcurrencyTest5 {
+
+    private static final Logger log = LoggerFactory.getLogger(ConcurrencyTest5.class);
 
     private static AtomicIntegerFieldUpdater<ConcurrencyTest5> updater = AtomicIntegerFieldUpdater.newUpdater(ConcurrencyTest5.class, "count");
 

@@ -1,6 +1,8 @@
 package com.songsir.deadlock;
 
-import lombok.extern.slf4j.Slf4j;
+import com.songsir.concurrency.ConcurrencyTest;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * @PackageName com.songsir.deadlock
@@ -10,9 +12,10 @@ import lombok.extern.slf4j.Slf4j;
  * @Description:
  * @Copyright Copyright (c) 2019, songsir01@163.com All Rights Reserved.
  */
-@Slf4j
 public class deadLock implements Runnable {
 
+
+    private static final Logger log = LoggerFactory.getLogger(deadLock.class);
 
     public int flag = 1;
 

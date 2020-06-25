@@ -1,6 +1,7 @@
 package com.songsir.concurrency;
 
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
@@ -16,8 +17,9 @@ import java.util.concurrent.atomic.AtomicBoolean;
  * @Description:
  * @Copyright Copyright (c) 2019, songsir01@163.com All Rights Reserved.
  */
-@Slf4j
 public class ConcurrencyTest6 {
+
+    private static final Logger log = LoggerFactory.getLogger(ConcurrencyTest6.class);
 
     private static AtomicBoolean isHappened = new AtomicBoolean(false);
 

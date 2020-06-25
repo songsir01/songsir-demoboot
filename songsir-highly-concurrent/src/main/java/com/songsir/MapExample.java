@@ -1,6 +1,7 @@
 package com.songsir;
 
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -16,8 +17,9 @@ import java.util.concurrent.Semaphore;
  * @Description:
  * @Copyright Copyright (c) 2019, songsir01@163.com All Rights Reserved.
  */
-@Slf4j
 public class MapExample {
+
+    private static final Logger log = LoggerFactory.getLogger(MapExample.class);
 
     private static Map<Integer, Integer> map = new HashMap<>();
 

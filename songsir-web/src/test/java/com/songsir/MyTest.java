@@ -1,7 +1,6 @@
 package com.songsir;
 
 import com.alibaba.fastjson.JSON;
-import com.songsir.bean.LombokBean;
 import com.songsir.bean.TBean;
 import org.apache.commons.lang.StringEscapeUtils;
 import org.apache.commons.lang.StringUtils;
@@ -114,14 +113,6 @@ class Ee {
     }
 }
 
-class TestLomBok {
-
-    public static void main(String[] args) {
-        LombokBean lombokBean = new LombokBean();
-        lombokBean.setId(123);
-        System.out.println(lombokBean.toString());
-    }
-}
 
 class TestYunsuan {
     public static void main(String[] args) {

@@ -1,6 +1,8 @@
 package com.songsir.lock;
 
-import lombok.extern.slf4j.Slf4j;
+import com.songsir.concurrency.ConcurrencyTest;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.Map;
 import java.util.Set;
@@ -16,10 +18,9 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  * @Description: 不安全的计数
  * @Copyright Copyright (c) 2019, songsir01@163.com All Rights Reserved.
  */
-@Slf4j
 public class LockExample2 {
 
-
+    private static final Logger log = LoggerFactory.getLogger(LockExample2.class);
     private final Map<String, Data> map = new TreeMap();
 
     private final ReentrantReadWriteLock lock = new ReentrantReadWriteLock();

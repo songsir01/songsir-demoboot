@@ -1,6 +1,7 @@
 package com.songsir.concurrency;
 
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
@@ -15,8 +16,9 @@ import java.util.concurrent.Semaphore;
  * @Description: 不安全的计数
  * @Copyright Copyright (c) 2019, songsir01@163.com All Rights Reserved.
  */
-@Slf4j
 public class ConcurrencyTest {
+
+    private static final Logger log = LoggerFactory.getLogger(ConcurrencyTest.class);
 
     public static int clientTotal = 5000;
 
