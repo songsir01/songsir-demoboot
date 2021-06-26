@@ -3,14 +3,15 @@
 <!-- monitorInterval:含义是每隔300秒重新读取配置文件，可以不重启应用的情况下修改配置 -->
 <Configuration status="warn" monitorInterval="300">
     <properties>
-        <property name="INFO_FILE_NAME">info</property>
-        <property name="ERROR_FILE_NAME">error</property>
+        <property name="INFO_FILE_NAME">web-info</property>
+        <property name="ERROR_FILE_NAME">web-error</property>
     </properties>
 
     <Appenders>
         <Console name="Console" target="SYSTEM_OUT">
             <!-- 左对齐，最小宽度为4；长度>10也可正常显示，不足4用空格补齐 -->
-            <PatternLayout charset="UTF-8" pattern="%d{DEFAULT} [%t] %-4level - %l - %msg%n"/>
+            <PatternLayout charset="UTF-8"
+                           pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %style{[%t]}{bright,magenta} %highlight{%-5level}{ERROR=Bright RED, WARN=Bright Yellow, INFO=Bright Green, DEBUG=Bright Cyan, TRACE=Bright White} - %l - %msg%n"/>
         </Console>
 
         <!-- fileName:日志位置以及文件名；filePattern:rolling时新建文件的位置以及命名规则。命名文件名称需要细到时分秒是注意不要这么写
@@ -25,7 +26,7 @@
                 <ThresholdFilter level="INFO" onMatch="ACCEPT" onMismatch="DENY"/>
             </Filters>
             <PatternLayout
-                    pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %l - %msg%n"/>
+                    pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %style{[%t]}{bright,magenta} %highlight{%-5level}{ERROR=Bright RED, WARN=Bright Yellow, INFO=Bright Green, DEBUG=Bright Cyan, TRACE=Bright White} - %l - %msg%n"/>
             <Policies>
                 <!-- 下面两个策略：满足一个，即会产生一个文件 -->
                 <!-- 日志文件大于100M,就新建文件 -->
@@ -46,7 +47,7 @@
                 <ThresholdFilter level="error" onMatch="ACCEPT" onMismatch="DENY"/>
             </Filters>
             <PatternLayout
-                    pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %l - %msg%n"/>
+                    pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %style{[%t]}{bright,magenta} %highlight{%-5level}{ERROR=Bright RED, WARN=Bright Yellow, INFO=Bright Green, DEBUG=Bright Cyan, TRACE=Bright White} - %l - %msg%n"/>
             <Policies>
                 <SizeBasedTriggeringPolicy size="100 MB"/>
                 <TimeBasedTriggeringPolicy interval="1"/>
@@ -59,12 +60,12 @@
         <!-- additivity="false"表示在该logger中输出的日志不会再延伸到父层logger。这里如果改为true，则会延伸到Root
             Logger，遵循Root Logger的配置也输出一次。 -->
         <!-- logger的级别优先于appender的级别，logger为debug,appender为info,debug信息依然可以呈现。即以logger级别为主。 -->
-        <logger name="com.songsir.dao.mapper" level="debug" additivity="false">
+        <!--<logger name="com.songsir.dao.mapper" level="debug" additivity="false">
             <appender-ref ref="Console"/>
         </logger>
         <logger name="com.songsir.dao.mapper2" level="debug" additivity="false">
             <appender-ref ref="Console"/>
-        </logger>
+        </logger>-->
 
         <Root level="INFO">
             <AppenderRef ref="Console"/>
