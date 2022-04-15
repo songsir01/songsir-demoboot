@@ -1,7 +1,7 @@
 {
   "end_point": "http://oss-cn-beijing.aliyuncs.com",
-  "access_key_id": "LTAI4G9ikSC81JEbfCPeWn5Y",
-  "access_key_secret": "85BtvKqbZHJSf5z4coqFWuOsomV4kk",
+  "access_key_id": "",
+  "access_key_secret": "",
   "bucket_name_1": "songsirimg",
   "key": "home/img/"
 }
