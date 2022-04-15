@@ -5,10 +5,8 @@ import com.alibaba.fastjson.JSONObject;
 import com.aliyun.oss.OSSClient;
 import com.songsir.bean.Face;
 import com.songsir.service.ISongsirService;
-import com.songsir.util.BaiduFaceUtil;
-import com.songsir.util.Base64Util;
-import com.songsir.util.GsonUtils;
-import com.songsir.util.HttpUtil;
+import com.songsir.util.*;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,7 +15,10 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.support.StandardMultipartHttpServletRequest;
 
 import javax.servlet.http.HttpServletRequest;
-import java.io.*;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -31,18 +32,12 @@ import java.util.Map;
  * @Description:
  * @Copyright Copyright (c) 2018, songyapeng@shopin.cn All Rights Reserved.
  */
+@Slf4j
 @Controller
 public class AliYunOssController {
 
     @Autowired
     ISongsirService songsirService;
-
-
-    public static String ENDPOINT = "http://oss-cn-beijing.aliyuncs.com";
-    public static String ACCESS_KEY_ID = "";
-    public static String ACCESS_KEY_SECRET = "";
-    public static String BUCKET_NAME = "songsirimg";
-    public static String KEY = "home/img/";
 
     private static final String DERECTURL = "https://aip.baidubce.com/rest/2.0/face/v3/detect";
 
@@ -82,9 +77,9 @@ public class AliYunOssController {
                 InputStream streamForFaceReact = new ByteArrayInputStream(data);
 
                 // 创建OSSClient实例
-                OSSClient ossClient = new OSSClient(ENDPOINT, ACCESS_KEY_ID, ACCESS_KEY_SECRET);
+                OSSClient ossClient = new OSSClient(LoadOssConfigUtil.getOssConfig().getEndPoint(), LoadOssConfigUtil.getOssConfig().getAccessKeyId(), LoadOssConfigUtil.getOssConfig().getAccessKeySecret());
                 // 上传文件流
-                ossClient.putObject(BUCKET_NAME, KEY + name, streamForUpload);
+                ossClient.putObject(LoadOssConfigUtil.getOssConfig().getBucketName1(), LoadOssConfigUtil.getOssConfig().getKey() + name, streamForUpload);
 
                 ossClient.shutdown();
                 // 人脸识别
@@ -92,13 +87,12 @@ public class AliYunOssController {
             }
             ret.put("success", true);
             ret.put("msg", key + name);
-            System.out.println(("图片上传阿里云 name=" + key + name));
-
-        } catch (IOException e) {
-            e.printStackTrace();
+            log.info("图片上传阿里云, key is {}, name is {}", key, name);
+        } catch (Exception e) {
+            log.error("e: ", e);
         }
 
-        System.out.println(ret.toString());
+        log.info("ret is {}", ret);
         return ret.toString();
     }
 
@@ -153,7 +147,7 @@ public class AliYunOssController {
                 ret.put("successFace", true);
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            log.error("ee: ", e);
         }
         return ret;
     }

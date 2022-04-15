@@ -20,9 +20,11 @@ import java.util.Map;
 public class BaiduFaceUtil {
 
     // 官网获取的 API Key
-    private static final String APIKEY = "jMr8yvzUbpB8YKCHLSiz7qAO";
+//    private static final String APIKEY = "jMr8yvzUbpB8YKCHLSiz7qAO";
+    private static final String APIKEY = "yYGvzUHDqabrg4roqIymH7k1";
     // 官网获取的 Secret
-    private static final String APISCRET = "SROB4zQvciWKNcEpwsQTtEXogSTZPl7Y";
+//    private static final String APISCRET = "SROB4zQvciWKNcEpwsQTtEXogSTZPl7Y";
+    private static final String APISCRET = "jLqNmjVFAf306PWKdlfSbQ0X1pfCMrD7";
     // 获取token地址
     private static final String AUTHHOST = "https://aip.baidubce.com/oauth/2.0/token?";
 

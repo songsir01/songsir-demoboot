@@ -10,6 +10,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @PackageName com.songsir.controller
@@ -43,8 +45,17 @@ public class SongsirController {
     }
 
 
-
-
+    public static void main(String[] args) {
+        Map<String, Student> stuMap = new HashMap<>();
+        Student s1 = new Student();
+        s1.setSname("song1");
+        Student s2 = new Student();
+        s2.setSname("song2");
+        stuMap.put("song1", s1);
+        stuMap.put("song2", s2);
+        String sname = stuMap.values().stream().findFirst().orElse(new Student()).getSname();
+        System.out.println(sname);
+    }
 
 
 }

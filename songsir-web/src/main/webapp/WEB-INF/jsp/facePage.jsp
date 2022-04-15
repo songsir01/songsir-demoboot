@@ -128,7 +128,7 @@
                             setTimeout(closeLoad, 2000);
                         },
                         error: function (data, status, e) {
-                            aler("上传图片失败，请稍后重试。");
+                            alert("上传图片失败，请稍后重试。");
                         }
                     });
                 }
